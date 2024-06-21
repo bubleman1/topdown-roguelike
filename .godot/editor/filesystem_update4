@@ -1,3 +1,10 @@
 res://Scenes/main_menu.tscn
 res://Assets/Backgrounds/main_menu.tres
+res://Scenes/Nodes/WizardPlayer.tscn
+res://Assets/SpriteAnimations/Wizard.tres
+res://Assets/SpriteAnimations/Red.tres
+res://Assets/SpriteAnimations/Black.tres
+res://Assets/SpriteAnimations/Green.tres
+res://Assets/SpriteAnimations/Purple.tres
+res://Scripts/player_script.cs
 res://Scenes/Game1.tscn

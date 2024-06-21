@@ -1,23 +1,23 @@
-[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://mu3gv6tmxhuu"]
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://kjec1pf8guu7"]
 
-[ext_resource type="Texture2D" uid="uid://bp4ws2smlnu4v" path="res://Assets/Player/player_wizardSheetGreen-export.png" id="1_cc3qt"]
+[ext_resource type="Texture2D" uid="uid://4sl13ix4qlbj" path="res://Assets/SpriteSheets/player_wizardSheetGreen-export.png" id="1_ykc3t"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6jxn7"]
-atlas = ExtResource("1_cc3qt")
+[sub_resource type="AtlasTexture" id="AtlasTexture_i5755"]
+atlas = ExtResource("1_ykc3t")
 region = Rect2(0, 0, 160, 160)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_abfn0"]
-atlas = ExtResource("1_cc3qt")
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqsru"]
+atlas = ExtResource("1_ykc3t")
 region = Rect2(160, 0, 160, 160)
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6jxn7")
+"texture": SubResource("AtlasTexture_i5755")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_abfn0")
+"texture": SubResource("AtlasTexture_nqsru")
 }],
 "loop": true,
 "name": &"default",

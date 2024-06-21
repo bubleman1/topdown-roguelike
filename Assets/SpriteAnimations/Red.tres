@@ -1,23 +1,23 @@
-[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://cblbu26w7yxtn"]
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://cd074xtyobj25"]
 
-[ext_resource type="Texture2D" uid="uid://6lfwggykdtfp" path="res://Assets/Player/player_wizardSheetRed-export.png" id="1_ceqem"]
+[ext_resource type="Texture2D" uid="uid://cosvf462x8j7t" path="res://Assets/SpriteSheets/player_wizardSheetRed-export.png" id="1_qlmxj"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4gixc"]
-atlas = ExtResource("1_ceqem")
+[sub_resource type="AtlasTexture" id="AtlasTexture_1a4gv"]
+atlas = ExtResource("1_qlmxj")
 region = Rect2(0, 0, 160, 160)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tttdt"]
-atlas = ExtResource("1_ceqem")
+[sub_resource type="AtlasTexture" id="AtlasTexture_gcavb"]
+atlas = ExtResource("1_qlmxj")
 region = Rect2(160, 0, 160, 160)
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4gixc")
+"texture": SubResource("AtlasTexture_1a4gv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_tttdt")
+"texture": SubResource("AtlasTexture_gcavb")
 }],
 "loop": true,
 "name": &"default",
