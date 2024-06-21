@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://u8r7d15cjtvi"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_jhm7a"]
+[ext_resource type="Texture2D" uid="uid://dwpegt6f6wvjx" path="res://Assets/Backgrounds/backiee-264640-landscape.jpg" id="2_2qv1i"]
+[ext_resource type="FontFile" uid="uid://bkn2rvn6fk4no" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="3_1wuxl"]
+[ext_resource type="Theme" uid="uid://b4x01yalyifn1" path="res://Assets/Backgrounds/main_menu.tres" id="3_p2fqj"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_jhm7a")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2qv1i")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 61.0
+offset_right = 1437.0
+offset_bottom = 157.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_1wuxl")
+theme_override_font_sizes/font_size = 70
+text = "Forbidden magic"
+
+[node name="Play" type="Button" parent="."]
+layout_mode = 0
+offset_left = 725.0
+offset_top = 250.0
+offset_right = 1125.0
+offset_bottom = 325.0
+theme = ExtResource("3_p2fqj")
+theme_override_fonts/font = ExtResource("3_1wuxl")
+theme_override_font_sizes/font_size = 40
+text = "PLAY"
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 0
+offset_left = 725.0
+offset_top = 375.0
+offset_right = 1125.0
+offset_bottom = 450.0
+theme = ExtResource("3_p2fqj")
+theme_override_fonts/font = ExtResource("3_1wuxl")
+theme_override_font_sizes/font_size = 40
+text = "OPTIONS"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 725.0
+offset_top = 500.0
+offset_right = 1125.0
+offset_bottom = 575.0
+theme = ExtResource("3_p2fqj")
+theme_override_fonts/font = ExtResource("3_1wuxl")
+theme_override_font_sizes/font_size = 40
+text = "QUIT"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
