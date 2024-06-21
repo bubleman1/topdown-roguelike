@@ -1,3 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718968152
-icon.svg::CompressedTexture2D::4035083160992765361::1718968146::1718968152::1::::<><>::
+::res://::1718991652
+export_presets.cfg::TextFile::-1::1718979317::0::1::::<><>::
+icon.svg::CompressedTexture2D::4035083160992765361::1718979317::1718979317::1::::<><>::
+README.md::TextFile::-1::1718979317::0::1::::<><>::
+main_menu.tscn::PackedScene::1472990872027683910::1718991652::0::1::::<><>::uid://rv5pjl1av6lr::::res://Assets/Backgrounds/backiee-221243-landscape.jpg
+::res://Assets/::1718988722
+::res://Assets/Backgrounds/::1718988920
+backiee-221243-landscape.jpg::CompressedTexture2D::1238411062258555691::1718988884::1718988920::1::::<><>::
+::res://Scenes/::1718988629
+::res://Scripts/::1718988554

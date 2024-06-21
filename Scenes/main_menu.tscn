@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://u8r7d15cjtvi"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_jhm7a"]
+[ext_resource type="Texture2D" uid="uid://rv5pjl1av6lr" path="res://Assets/Backgrounds/backiee-221243-landscape.jpg" id="2_bp3l8"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_jhm7a")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bp3l8")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1160.0
+offset_top = 61.0
+offset_right = 1529.0
+offset_bottom = 157.0
+theme_override_font_sizes/font_size = 70
+text = "Title Name"
+
+[node name="Play" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1200.0
+offset_top = 250.0
+offset_right = 1500.0
+offset_bottom = 325.0
+theme_override_font_sizes/font_size = 40
+text = "PLAY"
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1200.0
+offset_top = 350.0
+offset_right = 1500.0
+offset_bottom = 425.0
+theme_override_font_sizes/font_size = 40
+text = "OPTIONS"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1200.0
+offset_top = 450.0
+offset_right = 1500.0
+offset_bottom = 525.0
+theme_override_font_sizes/font_size = 40
+text = "QUIT"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
