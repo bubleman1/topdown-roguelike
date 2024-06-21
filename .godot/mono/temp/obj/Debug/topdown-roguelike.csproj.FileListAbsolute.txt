@@ -15,3 +15,20 @@ D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\refint\topdown-rog
 D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.pdb
 D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.genruntimeconfig.cache
 D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\ref\topdown-roguelike.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.deps.json
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.runtimeconfig.json
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.pdb
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.AssemblyReference.cache
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.GeneratedMSBuildEditorConfig.editorconfig
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfoInputs.cache
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfo.cs
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.CoreCompileInputs.cache
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.CopyComplete
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\refint\topdown-roguelike.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.pdb
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.genruntimeconfig.cache
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\ref\topdown-roguelike.dll
