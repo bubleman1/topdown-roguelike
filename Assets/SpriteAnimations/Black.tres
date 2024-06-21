@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://dcf7hqgnpr3a4"]
+
+[ext_resource type="Texture2D" uid="uid://bexn30uplu2xm" path="res://Assets/player_wizardSheetBlack.png" id="1_5o47f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fl64v"]
+atlas = ExtResource("1_5o47f")
+region = Rect2(0, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6k4l"]
+atlas = ExtResource("1_5o47f")
+region = Rect2(160, 0, 160, 160)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fl64v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6k4l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

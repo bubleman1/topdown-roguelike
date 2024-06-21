@@ -2,3 +2,8 @@ res://main_menu.tscn
 res://Scenes/main_menu.tscn
 res://main_menu.gd
 res://Scenes/Game1.tscn
+res://Assets/SpriteAnimations/Black.tres
+res://Assets/SpriteAnimations/Green.tres
+res://Assets/SpriteAnimations/Purple.tres
+res://Assets/SpriteAnimations/Red.tres
+res://Assets/SpriteAnimations/Wizard.tres
