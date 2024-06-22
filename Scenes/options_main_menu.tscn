@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/options_main_menu.gd" id="1_6lh8r"]
 [ext_resource type="Texture2D" uid="uid://dwpegt6f6wvjx" path="res://Assets/Backgrounds/backiee-264640-landscape.jpg" id="2_i7ebn"]
 [ext_resource type="FontFile" uid="uid://bkn2rvn6fk4no" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="3_jgykl"]
-[ext_resource type="Theme" uid="uid://b4x01yalyifn1" path="res://Assets/Backgrounds/main_menu.tres" id="4_6qi7a"]
+[ext_resource type="Theme" uid="uid://b4x01yalyifn1" path="res://Assets/fonts/main_menu.tres" id="4_6qi7a"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3

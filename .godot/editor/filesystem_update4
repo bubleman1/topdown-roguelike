@@ -1,9 +1,4 @@
 res://Scenes/main_menu.tscn
 res://Assets/Backgrounds/main_menu.tres
-res://Assets/SpriteAnimations/Wizard.tres
-res://Scenes/Nodes/WizardPlayer.tscn
-res://Scenes/Game1.tscn
-res://Scripts/player_script.cs
+res://Assets/fonts/main_menu.tres
 res://Scenes/options_main_menu.tscn
-res://Scripts/main_menu.gd
-res://Scripts/options_main_menu.gd
