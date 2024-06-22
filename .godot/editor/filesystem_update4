@@ -1,4 +1,3 @@
-res://Scenes/main_menu.tscn
-res://Assets/Backgrounds/main_menu.tres
+res://Scenes/Game1.tscn
 res://Assets/fonts/main_menu.tres
-res://Scenes/options_main_menu.tscn
+res://Assets/SpriteAnimations/Wizard.tres

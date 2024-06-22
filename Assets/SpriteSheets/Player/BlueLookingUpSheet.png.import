@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfic421b2n4h5"
-path="res://.godot/imported/player_wizardSheetBlack.png-7e2891b7dd7c7d20a022c0c253a14603.ctex"
+uid="uid://boxyuc4inwive"
+path="res://.godot/imported/BlueLookingUpSheet.png-fe80298927b4650029a0469a88701501.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/SpriteSheets/player_wizardSheetBlack.png"
-dest_files=["res://.godot/imported/player_wizardSheetBlack.png-7e2891b7dd7c7d20a022c0c253a14603.ctex"]
+source_file="res://Assets/SpriteSheets/Player/BlueLookingUpSheet.png"
+dest_files=["res://.godot/imported/BlueLookingUpSheet.png-fe80298927b4650029a0469a88701501.ctex"]
 
 [params]
 

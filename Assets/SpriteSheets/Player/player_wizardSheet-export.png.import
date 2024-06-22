@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1to1cd3qiarj"
-path="res://.godot/imported/player_wizardSheetGreen-export.png-929f6258e60c9c3cf2b772422f38766d.ctex"
+uid="uid://cvglks6l3xc5d"
+path="res://.godot/imported/player_wizardSheet-export.png-1b86492ba0c82afff52175b19012df75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/player_wizardSheetGreen-export.png"
-dest_files=["res://.godot/imported/player_wizardSheetGreen-export.png-929f6258e60c9c3cf2b772422f38766d.ctex"]
+source_file="res://Assets/SpriteSheets/Player/player_wizardSheet-export.png"
+dest_files=["res://.godot/imported/player_wizardSheet-export.png-1b86492ba0c82afff52175b19012df75.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dnqmtnosgyxqi"]
 
 [ext_resource type="Script" path="res://Scripts/player_script.cs" id="1_6ocqt"]
-[ext_resource type="SpriteFrames" uid="uid://lwmcxm261sch" path="res://Assets/SpriteAnimations/Wizard.tres" id="1_sqpja"]
+[ext_resource type="SpriteFrames" uid="uid://lwmcxm261sch" path="res://Assets/SpriteAnimations/Player/Wizard.tres" id="1_sqpja"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_640ds"]
 radius = 52.0
