@@ -1,17 +1,21 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 CollisionPolygon2D
 Area2D
 AnimatedSprite2D
 CharacterBody2D
 RigidBody2D
 =======
+=======
+VBoxContainer
+Label
+HSlider
+Button
+>>>>>>> 8e8d762247515eb95d2859e3925f8fdb136eea6d
 CharacterBody2D
 CollisionShape2D
 AnimatedSprite2D
 MarginContainer
-VBoxContainer
 ColorRect
-Button
-Label
 TextureRect
 >>>>>>> a3fe801b4951e0043fdca0f46e35d9eeaf936a30

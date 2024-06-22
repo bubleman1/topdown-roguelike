@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_jhm7a"]
 [ext_resource type="Texture2D" uid="uid://dwpegt6f6wvjx" path="res://Assets/Backgrounds/backiee-264640-landscape.jpg" id="2_2qv1i"]
 [ext_resource type="FontFile" uid="uid://bkn2rvn6fk4no" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="3_1wuxl"]
-[ext_resource type="Theme" uid="uid://b4x01yalyifn1" path="res://Assets/Backgrounds/main_menu.tres" id="3_p2fqj"]
+[ext_resource type="Theme" uid="uid://b4x01yalyifn1" path="res://Assets/fonts/main_menu.tres" id="3_p2fqj"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -28,21 +28,22 @@ expand_mode = 1
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 447.0
+offset_left = 465.0
 offset_top = 61.0
-offset_right = 1437.0
+offset_right = 1455.0
 offset_bottom = 157.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.98293, 0.353124, 0.86085, 1)
 theme_override_fonts/font = ExtResource("3_1wuxl")
 theme_override_font_sizes/font_size = 70
 text = "Forbidden magic"
 
 [node name="Play" type="Button" parent="."]
 layout_mode = 0
-offset_left = 725.0
-offset_top = 250.0
-offset_right = 1125.0
-offset_bottom = 325.0
+offset_left = 760.0
+offset_top = 350.0
+offset_right = 1160.0
+offset_bottom = 425.0
 theme = ExtResource("3_p2fqj")
 theme_override_fonts/font = ExtResource("3_1wuxl")
 theme_override_font_sizes/font_size = 40
@@ -50,10 +51,10 @@ text = "PLAY"
 
 [node name="Options" type="Button" parent="."]
 layout_mode = 0
-offset_left = 725.0
-offset_top = 375.0
-offset_right = 1125.0
-offset_bottom = 450.0
+offset_left = 760.0
+offset_top = 475.0
+offset_right = 1160.0
+offset_bottom = 550.0
 theme = ExtResource("3_p2fqj")
 theme_override_fonts/font = ExtResource("3_1wuxl")
 theme_override_font_sizes/font_size = 40
@@ -61,10 +62,10 @@ text = "OPTIONS"
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 725.0
-offset_top = 500.0
-offset_right = 1125.0
-offset_bottom = 575.0
+offset_left = 760.0
+offset_top = 600.0
+offset_right = 1160.0
+offset_bottom = 675.0
 theme = ExtResource("3_p2fqj")
 theme_override_fonts/font = ExtResource("3_1wuxl")
 theme_override_font_sizes/font_size = 40
