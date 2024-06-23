@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:/GodotProjects/topdown-roguelike/.godot/mono/temp/obj/Debug/topdown-roguelike.csproj.AssemblyReference.cache
 D:/GodotProjects/topdown-roguelike/.godot/mono/temp/obj/Debug/topdown-roguelike.GeneratedMSBuildEditorConfig.editorconfig
 D:/GodotProjects/topdown-roguelike/.godot/mono/temp/obj/Debug/topdown-roguelike.AssemblyInfoInputs.cache
@@ -49,3 +50,56 @@ D:/Godot Engine/Project/topdown-roguelike/.godot/mono/temp/obj/Debug/ref/topdown
 /home/bubleman/Documents/GodotProjects/topdown-roguelike/.godot/mono/temp/obj/Debug/ref/topdown-roguelike.dll
 /home/bubleman/Documents/GodotProjects/topdown-roguelike/.godot/mono/temp/obj/Debug/topdown-roguelike.pdb
 /home/bubleman/Documents/GodotProjects/topdown-roguelike/.godot/mono/temp/obj/Debug/topdown-roguelike.genruntimeconfig.cache
+=======
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.AssemblyReference.cache
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.GeneratedMSBuildEditorConfig.editorconfig
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfoInputs.cache
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfo.cs
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.CoreCompileInputs.cache
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.deps.json
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.runtimeconfig.json
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.dll
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.pdb
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.CopyComplete
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.dll
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\refint\topdown-roguelike.dll
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.pdb
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.genruntimeconfig.cache
+D:\GodotProjects\topdown-roguelike\.godot\mono\temp\obj\Debug\ref\topdown-roguelike.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.deps.json
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.runtimeconfig.json
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.pdb
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.AssemblyReference.cache
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.GeneratedMSBuildEditorConfig.editorconfig
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfoInputs.cache
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfo.cs
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.CoreCompileInputs.cache
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.CopyComplete
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\refint\topdown-roguelike.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.pdb
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.genruntimeconfig.cache
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\ref\topdown-roguelike.dll
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.deps.json
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.runtimeconfig.json
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.dll
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.pdb
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\bin\Debug\GodotSharp.dll
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.AssemblyReference.cache
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.GeneratedMSBuildEditorConfig.editorconfig
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfoInputs.cache
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfo.cs
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.CoreCompileInputs.cache
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.CopyComplete
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.dll
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\obj\Debug\refint\topdown-roguelike.dll
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.pdb
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.genruntimeconfig.cache
+P:\Godot\Project Game\topdown-roguelike\.godot\mono\temp\obj\Debug\ref\topdown-roguelike.dll
+>>>>>>> 8cbc423164d59c6aa38f02a8690c7428bd24d24c

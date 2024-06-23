@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "xhdWJ7BXHA3xSELHKNsv1dpzU6ot3W+2aSNPt2T+IEOszv6THkAkVhrotbAIX3y1IzC6ioBvekxouUOOsEANsw==",
   "success": true,
   "projectFilePath": "/home/bubleman/Documents/GodotProjects/topdown-roguelike/topdown-roguelike.csproj",
+=======
+  "dgSpecHash": "z1WEaZFtnohYRuGl9jroTNcjxpH/9muBbMg1GT44Wkrkh1dXQ4WC8QPgN698rm+y4XjSD2xeWS8W5ykeUI+nCw==",
+  "success": true,
+  "projectFilePath": "P:\\Godot\\Project Game\\topdown-roguelike\\topdown-roguelike.csproj",
+>>>>>>> 8cbc423164d59c6aa38f02a8690c7428bd24d24c
   "expectedPackageFiles": [
     "/home/bubleman/.nuget/packages/godot.sourcegenerators/4.2.2/godot.sourcegenerators.4.2.2.nupkg.sha512",
     "/home/bubleman/.nuget/packages/godotsharp/4.2.2/godotsharp.4.2.2.nupkg.sha512",

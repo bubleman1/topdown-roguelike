@@ -85,11 +85,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "/home/bubleman/Documents/GodotProjects/topdown-roguelike/topdown-roguelike.csproj",
       "projectName": "topdown-roguelike",
       "projectPath": "/home/bubleman/Documents/GodotProjects/topdown-roguelike/topdown-roguelike.csproj",
       "packagesPath": "/home/bubleman/.nuget/packages/",
       "outputPath": "/home/bubleman/Documents/GodotProjects/topdown-roguelike/.godot/mono/temp/obj/",
+=======
+      "projectUniqueName": "P:\\Godot\\Project Game\\topdown-roguelike\\topdown-roguelike.csproj",
+      "projectName": "topdown-roguelike",
+      "projectPath": "P:\\Godot\\Project Game\\topdown-roguelike\\topdown-roguelike.csproj",
+      "packagesPath": "C:\\Users\\pepi_\\.nuget\\packages\\",
+      "outputPath": "P:\\Godot\\Project Game\\topdown-roguelike\\.godot\\mono\\temp\\obj\\",
+>>>>>>> 8cbc423164d59c6aa38f02a8690c7428bd24d24c
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/bubleman/.nuget/NuGet/NuGet.Config"
