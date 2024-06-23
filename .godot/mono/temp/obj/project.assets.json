@@ -11,10 +11,14 @@
       "GodotSharp/4.2.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/GodotSharp.dll": {}
+          "lib/net6.0/GodotSharp.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/GodotSharp.dll": {}
+          "lib/net6.0/GodotSharp.dll": {
+            "related": ".xml"
+          }
         }
       },
       "GodotSharpEditor/4.2.2": {
@@ -23,10 +27,14 @@
           "GodotSharp": "4.2.2"
         },
         "compile": {
-          "lib/net6.0/GodotSharpEditor.dll": {}
+          "lib/net6.0/GodotSharpEditor.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/GodotSharpEditor.dll": {}
+          "lib/net6.0/GodotSharpEditor.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -80,27 +88,19 @@
     ]
   },
   "packageFolders": {
-    "/home/bubleman/.nuget/packages/": {}
+    "C:\\Users\\pepi_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "/home/bubleman/Documents/GodotProjects/topdown-roguelike/topdown-roguelike.csproj",
-      "projectName": "topdown-roguelike",
-      "projectPath": "/home/bubleman/Documents/GodotProjects/topdown-roguelike/topdown-roguelike.csproj",
-      "packagesPath": "/home/bubleman/.nuget/packages/",
-      "outputPath": "/home/bubleman/Documents/GodotProjects/topdown-roguelike/.godot/mono/temp/obj/",
-=======
       "projectUniqueName": "P:\\Godot\\Project Game\\topdown-roguelike\\topdown-roguelike.csproj",
       "projectName": "topdown-roguelike",
       "projectPath": "P:\\Godot\\Project Game\\topdown-roguelike\\topdown-roguelike.csproj",
       "packagesPath": "C:\\Users\\pepi_\\.nuget\\packages\\",
       "outputPath": "P:\\Godot\\Project Game\\topdown-roguelike\\.godot\\mono\\temp\\obj\\",
->>>>>>> 8cbc423164d59c6aa38f02a8690c7428bd24d24c
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/bubleman/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\pepi_\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -143,7 +143,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -152,8 +153,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.130/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.423\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file P:\\Godot\\Project Game\\topdown-roguelike\\.godot\\mono\\temp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

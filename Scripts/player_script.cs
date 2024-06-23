@@ -5,7 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 public partial class player_script : CharacterBody2D
 {
 	[Export]
-	public float Speed { get; set; } = 200;
+	public float Speed { get; set; } = 400;
 	private AnimatedSprite2D animatedSprite { get; set; }
 	private Vector2 velocity = Vector2.Zero;
 

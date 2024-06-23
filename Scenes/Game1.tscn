@@ -1,9 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://lkohbc1oxdwm"]
+[gd_scene load_steps=3 format=3 uid="uid://lkohbc1oxdwm"]
 
 [ext_resource type="PackedScene" uid="uid://dnqmtnosgyxqi" path="res://Scenes/Nodes/WizardPlayer.tscn" id="1_db1nc"]
 
+[sub_resource type="TileSet" id="TileSet_pfmnn"]
+
 [node name="Game1" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_pfmnn")
+format = 2
 
 [node name="WizardPlayer" parent="." instance=ExtResource("1_db1nc")]
 rotation = -6.28319
 scale = Vector2(1, 1)
+
+[node name="Camera2D" type="Camera2D" parent="WizardPlayer"]
