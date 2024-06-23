@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Godot Engine\\Project\\topdown-roguelike\\topdown-roguelike.csproj": {}
+    "/home/bubleman/Documents/GodotProjects/topdown-roguelike/topdown-roguelike.csproj": {}
   },
   "projects": {
-    "D:\\Godot Engine\\Project\\topdown-roguelike\\topdown-roguelike.csproj": {
+    "/home/bubleman/Documents/GodotProjects/topdown-roguelike/topdown-roguelike.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Godot Engine\\Project\\topdown-roguelike\\topdown-roguelike.csproj",
+        "projectUniqueName": "/home/bubleman/Documents/GodotProjects/topdown-roguelike/topdown-roguelike.csproj",
         "projectName": "topdown-roguelike",
-        "projectPath": "D:\\Godot Engine\\Project\\topdown-roguelike\\topdown-roguelike.csproj",
-        "packagesPath": "C:\\Users\\pepi_\\.nuget\\packages\\",
-        "outputPath": "D:\\Godot Engine\\Project\\topdown-roguelike\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "/home/bubleman/Documents/GodotProjects/topdown-roguelike/topdown-roguelike.csproj",
+        "packagesPath": "/home/bubleman/.nuget/packages/",
+        "outputPath": "/home/bubleman/Documents/GodotProjects/topdown-roguelike/.godot/mono/temp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\pepi_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/bubleman/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -57,8 +57,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -67,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.423\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.130/RuntimeIdentifierGraph.json"
         }
       }
     }
