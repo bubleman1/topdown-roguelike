@@ -3,9 +3,10 @@
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_jhm7a"]
 [ext_resource type="Texture2D" uid="uid://dwpegt6f6wvjx" path="res://Assets/Backgrounds/backiee-264640-landscape.jpg" id="2_2qv1i"]
 [ext_resource type="FontFile" uid="uid://bkn2rvn6fk4no" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="3_1wuxl"]
-[ext_resource type="Theme" uid="uid://b4x01yalyifn1" path="res://Assets/fonts/main_menu.tres" id="3_p2fqj"]
+[ext_resource type="Theme" uid="uid://b4x01yalyifn1" path="res://Assets/Styles/main_menu.tres" id="3_p2fqj"]
 
 [node name="MainMenu" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

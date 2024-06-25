@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://lkohbc1oxdwm"]
+[gd_scene load_steps=8 format=3 uid="uid://lkohbc1oxdwm"]
 
 [ext_resource type="PackedScene" uid="uid://dnqmtnosgyxqi" path="res://Scenes/Nodes/WizardPlayer.tscn" id="1_db1nc"]
 [ext_resource type="Texture2D" uid="uid://mmry1e5qighb" path="res://Assets/Tiles/StoneSlab/smallStoneTilesx64.png" id="1_e8sd0"]
 [ext_resource type="Texture2D" uid="uid://bft3gim0ciqd8" path="res://Assets/Tiles/Wood/flushWoodTileFill.png" id="2_tlam6"]
+[ext_resource type="PackedScene" uid="uid://yc7rtxn4rv5w" path="res://Scenes/PauseMenu.tscn" id="4_uow55"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uwhsx"]
 texture = ExtResource("1_e8sd0")
@@ -38,3 +39,7 @@ rotation = -6.28319
 scale = Vector2(1, 1)
 
 [node name="Camera2D" type="Camera2D" parent="WizardPlayer"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("4_uow55")]

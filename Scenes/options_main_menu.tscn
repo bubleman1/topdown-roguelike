@@ -3,9 +3,10 @@
 [ext_resource type="Script" path="res://Scripts/options_main_menu.gd" id="1_6lh8r"]
 [ext_resource type="Texture2D" uid="uid://dwpegt6f6wvjx" path="res://Assets/Backgrounds/backiee-264640-landscape.jpg" id="2_i7ebn"]
 [ext_resource type="FontFile" uid="uid://bkn2rvn6fk4no" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="3_jgykl"]
-[ext_resource type="Theme" uid="uid://b4x01yalyifn1" path="res://Assets/fonts/main_menu.tres" id="4_6qi7a"]
+[ext_resource type="Theme" uid="uid://b4x01yalyifn1" path="res://Assets/Styles/main_menu.tres" id="4_6qi7a"]
 
-[node name="MainMenu" type="Control"]
+[node name="OptionsMenu" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -55,7 +56,29 @@ theme_override_font_sizes/font_size = 25
 text = "Volume "
 
 [node name="VolumeSlider" type="HSlider" parent="VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 697.0
+offset_top = 480.0
+offset_right = 997.0
+offset_bottom = 520.0
+scale = Vector2(1.7, 1.7)
+
+[node name="Fullscreen Button" type="CheckButton" parent="HBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+
+[node name="FullscreenText" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_jgykl")
+text = "Fullscreen ON/OFF
+"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Back" type="Button" parent="."]
 layout_mode = 0
@@ -68,4 +91,5 @@ theme_override_fonts/font = ExtResource("3_jgykl")
 theme_override_font_sizes/font_size = 40
 text = "BACK"
 
+[connection signal="toggled" from="HBoxContainer/Fullscreen Button" to="." method="_on_full_screen_button_toggled"]
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

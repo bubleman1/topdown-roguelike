@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://yc7rtxn4rv5w"]
+
+[ext_resource type="StyleBox" uid="uid://dhugumd5lyuga" path="res://Assets/Styles/ButtonPauseMenu.tres" id="1_bfatg"]
+[ext_resource type="Script" path="res://Scripts/PauseMenu.gd" id="1_rh5ak"]
+[ext_resource type="StyleBox" uid="uid://en4dldvnelgo" path="res://Assets/Styles/ButtonHoverPauseMenu.tres" id="2_4dmbo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_si0hl"]
+bg_color = Color(0.389671, 0.414778, 0.485916, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.534052, 0.598106, 0.881719, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rh5ak")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -514.5
+offset_top = -239.5
+offset_right = 514.5
+offset_bottom = 239.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_si0hl")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+custom_minimum_size = Vector2(100, 300)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Resume" type="Button" parent="PanelContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+theme_override_styles/normal = ExtResource("1_bfatg")
+theme_override_styles/hover = ExtResource("2_4dmbo")
+text = "RESUME
+"
+
+[node name="Quit" type="Button" parent="PanelContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+theme_override_styles/normal = ExtResource("1_bfatg")
+theme_override_styles/hover = ExtResource("2_4dmbo")
+text = "QUIT
+"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

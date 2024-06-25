@@ -93,11 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "P:\\Godot\\Project Game\\topdown-roguelike\\topdown-roguelike.csproj",
+      "projectUniqueName": "D:\\Godot Engine\\Project\\topdown-roguelike\\topdown-roguelike.csproj",
       "projectName": "topdown-roguelike",
-      "projectPath": "P:\\Godot\\Project Game\\topdown-roguelike\\topdown-roguelike.csproj",
+      "projectPath": "D:\\Godot Engine\\Project\\topdown-roguelike\\topdown-roguelike.csproj",
       "packagesPath": "C:\\Users\\pepi_\\.nuget\\packages\\",
-      "outputPath": "P:\\Godot\\Project Game\\topdown-roguelike\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "D:\\Godot Engine\\Project\\topdown-roguelike\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pepi_\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -156,13 +156,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.423\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file P:\\Godot\\Project Game\\topdown-roguelike\\.godot\\mono\\temp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
