@@ -1,3 +1,4 @@
 res://Scenes/Nodes/WizardPlayer.tscn
 res://Assets/Styles/main_menu.tres
 res://Assets/SpriteAnimations/Player/Wizard.tres
+res://Scenes/main_menu.tscn
