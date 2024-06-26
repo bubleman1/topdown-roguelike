@@ -1,8 +1,10 @@
 res://Scenes/main_menu.tscn
 res://Assets/Styles/main_menu.tres
 res://Assets/SpriteAnimations/Player/Wizard.tres
-res://Scripts/main_menu.gd
-res://Scripts/PauseMenu.gd
 res://Scenes/options_main_menu.tscn
 res://Scenes/Game1.tscn
+res://Scenes/Nodes/FireballProjectile.tscn
 res://Scenes/Nodes/WizardPlayer.tscn
+res://Scripts/fireball.cs
+res://Scripts/player_script.cs
+res://Scripts/shooting_point.cs

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://xmfesbj352qr"]
+
+[ext_resource type="Script" path="res://Scripts/fireball.cs" id="1_pu01q"]
+[ext_resource type="SpriteFrames" uid="uid://dk262mjiogf3" path="res://Assets/SpriteAnimations/Projectiles/fireball.tres" id="2_b07gn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v3or4"]
+
+[node name="FireballProjectile" type="Area2D"]
+script = ExtResource("1_pu01q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_v3or4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3.8147e-06, -3.8147e-06)
+rotation = 0.00945151
+scale = Vector2(0.117866, 0.117866)
+sprite_frames = ExtResource("2_b07gn")

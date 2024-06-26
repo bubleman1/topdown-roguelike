@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dnqmtnosgyxqi"]
+[gd_scene load_steps=6 format=3 uid="uid://dnqmtnosgyxqi"]
 
 [ext_resource type="Script" path="res://Scripts/player_script.cs" id="1_6ocqt"]
 [ext_resource type="SpriteFrames" uid="uid://lwmcxm261sch" path="res://Assets/SpriteAnimations/Player/Wizard.tres" id="1_sqpja"]
+[ext_resource type="PackedScene" uid="uid://xmfesbj352qr" path="res://Scenes/Nodes/FireballProjectile.tscn" id="2_twisk"]
+[ext_resource type="Script" path="res://Scripts/shooting_point.cs" id="4_jvqtc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_640ds"]
 radius = 52.0
@@ -12,6 +14,7 @@ position = Vector2(1, 1)
 scale = Vector2(0.5, 0.5)
 wall_min_slide_angle = 0.0
 script = ExtResource("1_6ocqt")
+Projectile = ExtResource("2_twisk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, 1)
@@ -21,3 +24,9 @@ sprite_frames = ExtResource("1_sqpja")
 position = Vector2(1, 1)
 shape = SubResource("CapsuleShape2D_640ds")
 one_way_collision_margin = 0.0
+
+[node name="Marker2D" type="Marker2D" parent="."]
+script = ExtResource("4_jvqtc")
+
+[node name="Marker2D" type="Marker2D" parent="Marker2D"]
+position = Vector2(80, 0)

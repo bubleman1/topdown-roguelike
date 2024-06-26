@@ -1,18 +1,23 @@
 using Godot;
 using System;
 using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 
 public partial class player_script : CharacterBody2D
 {
 	[Export]
 	public float Speed { get; set; } = 400;
+	[Export]
+	public PackedScene Projectile { get; set; }
 	private AnimatedSprite2D animatedSprite { get; set; }
+	private Marker2D shootingPoint {  get; set; }
 	private Vector2 velocity = Vector2.Zero;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+		shootingPoint = GetNode<Marker2D>("Marker2D").GetNode<Marker2D>("Marker2D");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -27,6 +32,7 @@ public partial class player_script : CharacterBody2D
 	
 	public void ProcessInput()
 	{
+
 		velocity = Vector2.Zero;
 		if(Input.IsActionPressed("right")){
 			velocity.X += 1;
@@ -42,9 +48,21 @@ public partial class player_script : CharacterBody2D
 			
    		if(Input.IsActionPressed("up")){
 			velocity.Y -= 1;
+		}
+		
+		if(Input.IsActionJustPressed("shoot")){
+			Shoot();			
 		}	
+
 		velocity = velocity.Normalized() * Speed;
 		
+	}
+
+	public void Shoot()
+	{
+		Area2D projectile = (Area2D)Projectile.Instantiate();
+		Owner.AddChild(projectile);
+		projectile.Transform = shootingPoint.GlobalTransform;
 	}
 
 	public void ProcessAnimations()
