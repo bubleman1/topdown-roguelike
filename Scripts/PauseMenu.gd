@@ -17,4 +17,5 @@ func _on_resume_pressed():
 	_is_paused = false
 
 func _on_quit_pressed():
+	get_tree().paused = false  # Ensure the game is not paused
 	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")

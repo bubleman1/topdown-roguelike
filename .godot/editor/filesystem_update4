@@ -1,9 +1,8 @@
-res://Scenes/PauseMenu.tscn
-res://Assets/fonts/main_menu.tres
-res://Assets/SpriteAnimations/Player/Wizard.tres
 res://Scenes/main_menu.tscn
+res://Assets/Styles/main_menu.tres
+res://Assets/SpriteAnimations/Player/Wizard.tres
+res://Scripts/main_menu.gd
+res://Scripts/PauseMenu.gd
 res://Scenes/options_main_menu.tscn
 res://Scenes/Game1.tscn
-res://Scenes/PauseMenu.gd
-res://Scripts/PauseMenu.gd
 res://Scenes/Nodes/WizardPlayer.tscn
