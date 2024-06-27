@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://bdf4jx2a05a3m"]
+
+[ext_resource type="Texture2D" uid="uid://waiksmwi2ktp" path="res://Assets/SpriteSheets/Projectiles/Windslash.png" id="1_hvmjd"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hvmjd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

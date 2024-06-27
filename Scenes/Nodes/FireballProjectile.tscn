@@ -4,6 +4,7 @@
 [ext_resource type="SpriteFrames" uid="uid://dk262mjiogf3" path="res://Assets/SpriteAnimations/Projectiles/fireball.tres" id="2_b07gn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_v3or4"]
+radius = 15.0
 
 [node name="FireballProjectile" type="Area2D"]
 script = ExtResource("1_pu01q")
@@ -12,7 +13,7 @@ script = ExtResource("1_pu01q")
 shape = SubResource("CircleShape2D_v3or4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(3.8147e-06, -3.8147e-06)
-rotation = 0.00945151
-scale = Vector2(0.117866, 0.117866)
+position = Vector2(-0.475334, -0.484408)
+rotation = 1.5708
+scale = Vector2(1.44417, 1.44417)
 sprite_frames = ExtResource("2_b07gn")
