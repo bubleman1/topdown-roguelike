@@ -1,12 +1,12 @@
 [gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://dk262mjiogf3"]
 
-[ext_resource type="Texture2D" uid="uid://bxqvh3a8bauqr" path="res://icon.svg" id="1_50gis"]
+[ext_resource type="Texture2D" uid="uid://chyoo2mc4v73a" path="res://Assets/SpriteSheets/Projectiles/SmolFIreball.png" id="1_fvbw1"]
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_50gis")
+"texture": ExtResource("1_fvbw1")
 }],
 "loop": true,
 "name": &"default",

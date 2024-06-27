@@ -7,8 +7,7 @@ public partial class player_script : CharacterBody2D
 {
 	[Export]
 	public float Speed { get; set; } = 400;
-	[Export]
-	public PackedScene Projectile { get; set; }
+	public Projectile Projectile { get; set; }
 	private AnimatedSprite2D animatedSprite { get; set; }
 	private Marker2D shootingPoint {  get; set; }
 	private Vector2 velocity = Vector2.Zero;
@@ -16,6 +15,8 @@ public partial class player_script : CharacterBody2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		Projectile = new Projectile();
+		Projectile.Spell = (PackedScene)GD.Load("res://Scenes/Nodes/FireballProjectile.tscn");
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		shootingPoint = GetNode<Marker2D>("Marker2D").GetNode<Marker2D>("Marker2D");
 	}
@@ -23,7 +24,7 @@ public partial class player_script : CharacterBody2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		
+		Projectile.ManageTime(delta);
 		ProcessInput();
 		ProcessAnimations();
 		base.Velocity = velocity;
@@ -50,8 +51,9 @@ public partial class player_script : CharacterBody2D
 			velocity.Y -= 1;
 		}
 		
-		if(Input.IsActionJustPressed("shoot")){
-			Shoot();			
+		if(Input.IsActionJustPressed("shoot") && Projectile.CanShoot){
+			Projectile.PutOnCooldown();
+			Shoot();		
 		}	
 
 		velocity = velocity.Normalized() * Speed;
@@ -60,7 +62,7 @@ public partial class player_script : CharacterBody2D
 
 	public void Shoot()
 	{
-		Area2D projectile = (Area2D)Projectile.Instantiate();
+		Area2D projectile = (Area2D)Projectile.Spell.Instantiate();
 		Owner.AddChild(projectile);
 		projectile.Transform = shootingPoint.GlobalTransform;
 	}

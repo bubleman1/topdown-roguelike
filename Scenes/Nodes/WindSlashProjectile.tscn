@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmsgk0kcvgjfc"]
+
+[ext_resource type="Script" path="res://Scripts/fireball.cs" id="1_s222c"]
+[ext_resource type="SpriteFrames" uid="uid://bdf4jx2a05a3m" path="res://Assets/SpriteAnimations/Projectiles/windSlash.tres" id="2_3tv27"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v3or4"]
+radius = 45.0999
+
+[node name="WindSlashProjectile" type="Area2D"]
+script = ExtResource("1_s222c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_v3or4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 0.00945151
+scale = Vector2(1.67061, 1.67061)
+sprite_frames = ExtResource("2_3tv27")
