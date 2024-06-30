@@ -40,6 +40,6 @@ scale = Vector2(1, 1)
 
 [node name="Camera2D" type="Camera2D" parent="WizardPlayer"]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="UI" type="CanvasLayer" parent="."]
 
-[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("4_uow55")]
+[node name="PauseMenu" parent="UI" instance=ExtResource("4_uow55")]
