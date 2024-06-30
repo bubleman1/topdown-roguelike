@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://lkohbc1oxdwm"]
+[gd_scene load_steps=10 format=3 uid="uid://lkohbc1oxdwm"]
 
 [ext_resource type="PackedScene" uid="uid://dnqmtnosgyxqi" path="res://Scenes/Nodes/WizardPlayer.tscn" id="1_db1nc"]
 [ext_resource type="Texture2D" uid="uid://mmry1e5qighb" path="res://Assets/Tiles/StoneSlab/smallStoneTilesx64.png" id="1_e8sd0"]
 [ext_resource type="Texture2D" uid="uid://bft3gim0ciqd8" path="res://Assets/Tiles/Wood/flushWoodTileFill.png" id="2_tlam6"]
 [ext_resource type="PackedScene" uid="uid://yc7rtxn4rv5w" path="res://Scenes/PauseMenu.tscn" id="4_uow55"]
+[ext_resource type="PackedScene" uid="uid://dxdfqaixv0gbe" path="res://Scenes/Game Ui/Minimap.tscn" id="5_rgrhl"]
+[ext_resource type="PackedScene" uid="uid://cxejh5awopcrt" path="res://Scenes/Game Ui/Bars.tscn" id="6_8mbfh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uwhsx"]
 texture = ExtResource("1_e8sd0")
@@ -43,3 +45,7 @@ scale = Vector2(1, 1)
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="PauseMenu" parent="UI" instance=ExtResource("4_uow55")]
+
+[node name="Minimap" parent="UI" instance=ExtResource("5_rgrhl")]
+
+[node name="ProgressBars" parent="UI" instance=ExtResource("6_8mbfh")]

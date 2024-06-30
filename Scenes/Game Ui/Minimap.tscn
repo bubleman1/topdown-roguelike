@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxdfqaixv0gbe"]
+
+[ext_resource type="Texture2D" uid="uid://v1wdsl3ergjc" path="res://Assets/Backgrounds/Minimap/simpleSpace_tilesheet@2.png" id="1_pmk18"]
+[ext_resource type="Script" path="res://Scripts/SubViewport1.gd" id="2_igdkq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q5sbx"]
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.643137, 0.862745, 0.701961, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[node name="Minimap" type="SubViewportContainer"]
+offset_left = 1560.0
+offset_top = 63.0
+offset_right = 1860.0
+offset_bottom = 363.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(150, 150)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_pmk18")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+handle_input_locally = false
+size = Vector2i(300, 300)
+render_target_update_mode = 4
+script = ExtResource("2_igdkq")
+
+[node name="Panel" type="Panel" parent="SubViewport"]
+offset_right = 300.0
+offset_bottom = 300.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_q5sbx")
+
+[node name="Camera2D" type="Camera2D" parent="SubViewport"]
