@@ -1,3 +1,6 @@
+CollisionShape2D
+CPUParticles2D
+Area2D
 Sprite2D
 Camera2D
 Panel
@@ -8,7 +11,4 @@ MarginContainer
 NinePatchRect
 ProgressBar
 AnimatedSprite2D
-CollisionShape2D
-Area2D
 Marker2D
-CanvasLayer

@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bc34lo3kqi1fg"]
+
+[ext_resource type="Script" path="res://Scripts/Projectiles/Resources/FireballRes.cs" id="1_hsgee"]
+
+[resource]
+script = ExtResource("1_hsgee")

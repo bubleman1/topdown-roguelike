@@ -15,8 +15,7 @@ public partial class player_script : CharacterBody2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		Projectile = new Projectile();
-		Projectile.Spell = (PackedScene)GD.Load("res://Scenes/Nodes/FireballProjectile.tscn");
+		Projectile = new WindSlashRes();
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		shootingPoint = GetNode<Marker2D>("Marker2D").GetNode<Marker2D>("Marker2D");
 	}

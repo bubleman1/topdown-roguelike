@@ -1,5 +1,17 @@
-res://Scenes/main_menu.tscn
+res://Scenes/Nodes/FireballProjectile.tscn
 res://Assets/Styles/main_menu.tres
 res://Assets/SpriteAnimations/Player/Wizard.tres
+res://Scenes/Nodes/WindSlashProjectile.tscn
+res://Scripts/Projectiles/Resources/FireballRes.cs
+res://Scripts/Projectile.cs
+res://Scripts/Projectiles/Resources/WindSlashRes.cs
+res://Scenes/Nodes/WizardPlayer.tscn
+res://Resources/Fireball.tres
+res://Resources/WindSlash.tres
+res://Scripts/player_script.cs
+res://Scenes/main_menu.tscn
 res://Scenes/Game1.tscn
 res://Scenes/Game Ui/Minimap.tscn
+res://Scripts/Projectiles/Movement/fireball.cs
+res://Scripts/shooting_point.cs
+res://Scenes/Nodes/Spark.tscn

@@ -11,7 +11,6 @@ public partial class Projectile : Resource
 	}
 	[Export]
 	public PackedScene Spell {get;set;}
-	public Area2D Area { get;set;}
 	[Export]
 	public float Cooldown { get; set; }
 	public float TimeLeft { get; set; } 

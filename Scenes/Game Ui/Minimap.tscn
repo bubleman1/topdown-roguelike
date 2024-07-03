@@ -15,10 +15,10 @@ corner_radius_bottom_right = 25
 corner_radius_bottom_left = 25
 
 [node name="Minimap" type="SubViewportContainer"]
-offset_left = 1560.0
-offset_top = 63.0
-offset_right = 1860.0
-offset_bottom = 363.0
+offset_left = 1562.0
+offset_top = 69.0
+offset_right = 1862.0
+offset_bottom = 369.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(150, 150)
@@ -31,9 +31,11 @@ size = Vector2i(300, 300)
 render_target_update_mode = 4
 script = ExtResource("2_igdkq")
 
-[node name="Panel" type="Panel" parent="SubViewport"]
-offset_right = 300.0
-offset_bottom = 300.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_q5sbx")
-
 [node name="Camera2D" type="Camera2D" parent="SubViewport"]
+
+[node name="Panel" type="Panel" parent="SubViewport"]
+offset_left = 2.0
+offset_top = 6.0
+offset_right = 302.0
+offset_bottom = 306.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_q5sbx")
