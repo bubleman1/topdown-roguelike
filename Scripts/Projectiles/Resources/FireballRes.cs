@@ -4,6 +4,12 @@ using System;
 public partial class FireballRes : Projectile
 {
 	public FireballRes() : base(){
-		Spell = (PackedScene)GD.Load("res://Scenes/Nodes/FireballProjectile.tscn");
+		spellNode = (PackedScene)GD.Load("res://Scenes/Nodes/FireballProjectile.tscn");
+		Spell = spellNode.Instantiate<Fireball>();
 	}
+
+    public override void Instantiate()
+    {
+        base.Instantiate<Fireball>();
+    }
 }

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://xmfesbj352qr"]
 
-[ext_resource type="Script" path="res://Scripts/Projectiles/Movement/fireball.cs" id="1_pu01q"]
+[ext_resource type="Script" path="res://Scripts/Projectiles/Movement/Fireball.cs" id="1_pu01q"]
 [ext_resource type="SpriteFrames" uid="uid://dk262mjiogf3" path="res://Assets/SpriteAnimations/Projectiles/fireball.tres" id="2_b07gn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_v3or4"]

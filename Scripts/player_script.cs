@@ -11,7 +11,7 @@ public partial class player_script : CharacterBody2D
 	[Export]
 	public float Health { get; set; } = 100;
 	
-	public Projectile Projectile { get; set; }
+	public Projectile Ability { get; set; }
 	private AnimatedSprite2D animatedSprite { get; set; }
 	private Marker2D shootingPoint {  get; set; }
 	private Vector2 velocity = Vector2.Zero;
@@ -19,7 +19,7 @@ public partial class player_script : CharacterBody2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		Projectile = new WindSlashRes();
+		Ability = new SparkRes();
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		shootingPoint = GetNode<Marker2D>("Marker2D").GetNode<Marker2D>("Marker2D");
 	}
@@ -27,7 +27,7 @@ public partial class player_script : CharacterBody2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		Projectile.ManageTime(delta);
+		Ability.ManageTime(delta);
 		ProcessInput();
 		ProcessAnimations();
 		base.Velocity = velocity;
@@ -54,18 +54,18 @@ public partial class player_script : CharacterBody2D
 			velocity.Y -= 1;
 		}
 		
-		if(Input.IsActionJustPressed("shoot") && Projectile.CanShoot){
-			Projectile.PutOnCooldown();
+		if(Input.IsActionJustPressed("shoot") && Ability.CanShoot){
+			Ability.PutOnCooldown();
 			Shoot();		
 		}	
 
 		velocity = velocity.Normalized() * Speed;
-		
 	}
 
 	public void Shoot()
 	{
-		Area2D projectile = (Area2D)Projectile.Spell.Instantiate();
+		Ability.Instantiate();
+		Fireball projectile = Ability.Spell;
 		Owner.AddChild(projectile);
 		projectile.Transform = shootingPoint.GlobalTransform;
 	}
