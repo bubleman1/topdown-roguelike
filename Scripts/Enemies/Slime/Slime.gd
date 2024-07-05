@@ -6,6 +6,10 @@ var speed = 150
 var player_chase = false
 var player = null
 
+
+func _ready():
+	add_to_group("enemy")
+	
 func _physics_process(_delta):
 	if player_chase:
 		velocity.x = player.position.x - position.x
@@ -18,10 +22,12 @@ func _physics_process(_delta):
 	
 
 func _on_detection_area_body_entered(body):
-	player = body
-	player_chase = true
+	if body.is_in_group("player"):
+		player = body
+		player_chase = true
 
+func _on_detection_area_body_exited(body):
+	if body.is_in_group("player"):
+		player = null
+		player_chase = false
 
-func _on_detection_area_body_exited(_body):
-	player = null
-	player_chase = false

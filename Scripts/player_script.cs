@@ -94,6 +94,7 @@ public partial class player_script : CharacterBody2D
 	{
 		 if (area.IsInGroup("enemy"))
 		{
+			Health -= 10;
 			animatedSprite.FlipH = true;
 		}
 	}

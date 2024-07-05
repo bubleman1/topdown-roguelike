@@ -62,7 +62,6 @@ D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-rog
 D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfoInputs.cache
 D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfo.cs
 D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.CoreCompileInputs.cache
-D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.CopyComplete
 D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.dll
 D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\refint\topdown-roguelike.dll
 D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.pdb
@@ -104,3 +103,5 @@ D:\Programing Projects\topdown-roguelike\.godot\mono\temp\obj\Debug\refint\topdo
 D:\Programing Projects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.pdb
 D:\Programing Projects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.genruntimeconfig.cache
 D:\Programing Projects\topdown-roguelike\.godot\mono\temp\obj\Debug\ref\topdown-roguelike.dll
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.sourcelink.json
+D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-.3DD23993.Up2Date

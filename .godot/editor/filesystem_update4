@@ -1,20 +1,22 @@
-res://Scenes/main_menu.tscn
 res://Scenes/Game Ui/InfoBars/HP.gd
 res://Scenes/Game Ui/minimap/MarginContainer.gd
 res://Scripts/SubViewport1.gd
 res://Assets/Styles/main_menu.tres
-res://Scripts/Enemies/Enemy1/Slime.gd
+res://Assets/SpriteAnimations/Player/Wizard.tres
+res://Scenes/main_menu.tscn
 res://Scenes/Game Ui/InfoBars/Bars.tscn
 res://Scenes/Game1.tscn
-res://Assets/SpriteAnimations/Player/Wizard.tres
-res://Scenes/Nodes/WizardPlayer.tscn
 res://Scenes/Nodes/Spark.tscn
 res://Scenes/Nodes/Slime.tscn
+res://Scenes/Nodes/WizardPlayer.tscn
 res://Scenes/Nodes/FireballProjectile.tscn
 res://Scenes/Nodes/WindSlashProjectile.tscn
+res://Scenes/Game Ui/minimap/MarginContainer.tscn
+res://Scripts/Enemies/Health_enemy.tscn
 res://Scripts/player_script.cs
 res://Scripts/shooting_point.cs
 res://Scripts/Projectiles/Movement/fireball.cs
 res://Scripts/Projectiles/Resources/FireballRes.cs
 res://Scripts/Projectile.cs
 res://Scripts/Projectiles/Resources/WindSlashRes.cs
+res://Scripts/Enemies/Slime/Slime.gd

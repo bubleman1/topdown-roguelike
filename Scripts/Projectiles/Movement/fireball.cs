@@ -7,12 +7,13 @@ public partial class fireball : Area2D
 	[Export]
 	public float Speed { get; set; } = 900;
 
-
-
-
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		if (!IsConnected("body_entered", new Callable(this, nameof(_on_body_entered))))
+		{
+			Connect("body_entered", new Callable(this, nameof(_on_body_entered)));
+		}
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -26,7 +27,9 @@ public partial class fireball : Area2D
 	{
 			if (body.IsInGroup("enemy"))
 			{
+				GD.Print("hit");
 				body.QueueFree();
+				QueueFree();
 			}
 			if(!body.IsInGroup("player"))
 			{
