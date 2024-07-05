@@ -90,4 +90,17 @@ public partial class player_script : CharacterBody2D
 			animatedSprite.FlipH = true;
 		}
 	}
+	private void _on_area_2d_area_entered(Area2D area)
+	{
+		 if (area.IsInGroup("enemy"))
+		{
+			animatedSprite.FlipH = true;
+		}
+	}
 }
+
+
+
+
+
+

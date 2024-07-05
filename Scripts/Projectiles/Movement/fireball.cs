@@ -22,12 +22,22 @@ public partial class fireball : Area2D
 
 	}
 
-	public void OnBulletBodyEntered(Area2D body)
+	private void _on_body_entered(Node2D body)
 	{
-		if (body.IsInGroup("enemy"))
-		{
-			body.QueueFree();
-		}
-		QueueFree();
+			if (body.IsInGroup("enemy"))
+			{
+				body.QueueFree();
+			}
+			if(!body.IsInGroup("player"))
+			{
+				QueueFree();
+			}
+			
 	}
 }
+
+
+
+
+
+

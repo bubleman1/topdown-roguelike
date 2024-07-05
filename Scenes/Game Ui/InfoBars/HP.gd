@@ -7,7 +7,6 @@ var player
 func _ready():
 	player_node_path = "../../../../WizardPlayer"
 	player = get_node(player_node_path)
-	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

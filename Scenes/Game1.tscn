@@ -46,11 +46,20 @@ collision_mask = 3
 
 [node name="Camera2D" type="Camera2D" parent="WizardPlayer"]
 
-[node name="Enemy1" parent="." instance=ExtResource("7_aheeq")]
-position = Vector2(675, -77)
+[node name="Slime1" parent="." instance=ExtResource("7_aheeq")]
+position = Vector2(394, -396)
 scale = Vector2(4, 4)
-collision_layer = 3
-collision_mask = 3
+collision_layer = 4
+collision_mask = 7
+
+[node name="Slime2" parent="." instance=ExtResource("7_aheeq")]
+light_mask = 3
+visibility_layer = 3
+z_index = 1
+position = Vector2(729, 280)
+scale = Vector2(4, 4)
+collision_layer = 4
+collision_mask = 7
 
 [node name="UI" type="CanvasLayer" parent="."]
 

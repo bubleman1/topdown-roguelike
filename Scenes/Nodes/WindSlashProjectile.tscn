@@ -36,3 +36,5 @@ angle_max = 360.0
 scale_amount_min = 10.0
 scale_amount_max = 10.0
 color = Color(0.47451, 1, 0.47451, 0.443137)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

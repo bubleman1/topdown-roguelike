@@ -13,7 +13,7 @@ colors = PackedColorArray(1, 1, 1, 1, 1, 1, 0, 1, 0.941176, 0.443137, 0, 1)
 [node name="FireballProjectile" type="Area2D"]
 script = ExtResource("1_pu01q")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["projectile"]]
 shape = SubResource("CircleShape2D_v3or4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -39,3 +39,5 @@ angle_max = 90.0
 scale_amount_min = 7.0
 scale_amount_max = 7.0
 color_ramp = SubResource("Gradient_r7oo3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
