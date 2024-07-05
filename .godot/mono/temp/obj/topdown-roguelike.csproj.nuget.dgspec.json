@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programing Projects\\topdown-roguelike\\topdown-roguelike.csproj": {}
+    "D:\\GodotProjects\\topdown-roguelike\\topdown-roguelike.csproj": {}
   },
   "projects": {
-    "D:\\Programing Projects\\topdown-roguelike\\topdown-roguelike.csproj": {
+    "D:\\GodotProjects\\topdown-roguelike\\topdown-roguelike.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programing Projects\\topdown-roguelike\\topdown-roguelike.csproj",
+        "projectUniqueName": "D:\\GodotProjects\\topdown-roguelike\\topdown-roguelike.csproj",
         "projectName": "topdown-roguelike",
-        "projectPath": "D:\\Programing Projects\\topdown-roguelike\\topdown-roguelike.csproj",
-        "packagesPath": "C:\\Users\\Jordan Georgiev\\.nuget\\packages\\",
-        "outputPath": "D:\\Programing Projects\\topdown-roguelike\\.godot\\mono\\temp\\obj\\",
+        "projectPath": "D:\\GodotProjects\\topdown-roguelike\\topdown-roguelike.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\GodotProjects\\topdown-roguelike\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\vstudio\\shared\\NuGetPackages"
+          "C:\\Users\\user\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jordan Georgiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,11 +41,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -52,15 +49,15 @@
           "dependencies": {
             "Godot.SourceGenerators": {
               "target": "Package",
-              "version": "[4.2.2, )"
+              "version": "[4.2.1, )"
             },
             "GodotSharp": {
               "target": "Package",
-              "version": "[4.2.2, )"
+              "version": "[4.2.1, )"
             },
             "GodotSharpEditor": {
               "target": "Package",
-              "version": "[4.2.2, )"
+              "version": "[4.2.1, )"
             }
           },
           "imports": [
@@ -79,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
