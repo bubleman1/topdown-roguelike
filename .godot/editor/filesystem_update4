@@ -1,17 +1,25 @@
-res://Scenes/Nodes/FireballProjectile.tscn
-res://Assets/Styles/main_menu.tres
+res://Scenes/Game Ui/minimap/MarginContainer.tscn
+res://Scenes/Game Ui/minimap/MarginContainer.gd
+res://Scripts/SubViewport1.gd
 res://Assets/SpriteAnimations/Player/Wizard.tres
+res://Assets/Styles/main_menu.tres
+res://Scenes/Game1.tscn
+res://Scenes/main_menu.tscn
+res://Scripts/Enemies/Enemy1/CharacterBody2D.tscn
+res://Scripts/Enemies/Enemy1/CharacterBody2D.gd
+res://Scenes/Game Ui/Bars.tscn
+res://Scenes/Nodes/FireballProjectile.tscn
+res://Scenes/Nodes/Spark.tscn
 res://Scenes/Nodes/WindSlashProjectile.tscn
+res://Scenes/Nodes/WizardPlayer.tscn
+res://Scenes/Game Ui/Minimap.tscn
+res://Scenes/Game Ui/InfoBars/HP.gd
+res://Scripts/player_script.cs
+res://Scenes/Game Ui/InfoBars/Bars.tscn
+res://Scripts/shooting_point.cs
+res://Scripts/Projectiles/Movement/fireball.cs
 res://Scripts/Projectiles/Resources/FireballRes.cs
 res://Scripts/Projectile.cs
 res://Scripts/Projectiles/Resources/WindSlashRes.cs
-res://Scenes/Nodes/WizardPlayer.tscn
-res://Resources/Fireball.tres
-res://Resources/WindSlash.tres
-res://Scripts/player_script.cs
-res://Scenes/main_menu.tscn
-res://Scenes/Game1.tscn
-res://Scenes/Game Ui/Minimap.tscn
-res://Scripts/Projectiles/Movement/fireball.cs
-res://Scripts/shooting_point.cs
-res://Scenes/Nodes/Spark.tscn
+res://Scripts/Enemies/Health_enemy.tscn
+res://Scenes/Nodes/Slime.tscn

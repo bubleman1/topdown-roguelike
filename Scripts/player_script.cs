@@ -7,11 +7,15 @@ public partial class player_script : CharacterBody2D
 {
 	[Export]
 	public float Speed { get; set; } = 400;
+	
+	[Export]
+	public float Health { get; set; } = 100;
+	
 	public Projectile Projectile { get; set; }
 	private AnimatedSprite2D animatedSprite { get; set; }
 	private Marker2D shootingPoint {  get; set; }
 	private Vector2 velocity = Vector2.Zero;
-
+	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{

@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpqvobiv8lfqq"]
+
+[ext_resource type="Script" path="res://Scenes/Game Ui/minimap/MarginContainer.gd" id="1_cpa3c"]
+[ext_resource type="Texture2D" uid="uid://dlwhwlr16f4mj" path="res://Assets/Backgrounds/Minimap/minimap-border.png" id="1_txxhc"]
+[ext_resource type="Texture2D" uid="uid://v1wdsl3ergjc" path="res://Assets/Backgrounds/Minimap/simpleSpace_tilesheet@2.png" id="2_hexkq"]
+[ext_resource type="Texture2D" uid="uid://dnysx3kahsmbv" path="res://Assets/Tiles/StoneSlab/smallStoneTilesx32.png" id="3_rreeo"]
+
+[node name="Minimap" type="MarginContainer"]
+visible = false
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -464.0
+offset_top = 48.0
+offset_right = -64.0
+offset_bottom = 448.0
+grow_horizontal = 0
+size_flags_stretch_ratio = 0.0
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+script = ExtResource("1_cpa3c")
+
+[node name="Frame" type="NinePatchRect" parent="."]
+z_index = 1
+layout_direction = 1
+layout_mode = 2
+texture = ExtResource("1_txxhc")
+patch_margin_left = 20
+patch_margin_top = 20
+patch_margin_right = 20
+patch_margin_bottom = 20
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(20, 80)
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 70
+
+[node name="Grid" type="TextureRect" parent="MarginContainer"]
+layout_direction = 3
+layout_mode = 2
+size_flags_stretch_ratio = 0.5
+texture = ExtResource("3_rreeo")
+expand_mode = 5
+stretch_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/Grid"]
+modulate = Color(0.0313726, 0, 0, 1)
+visibility_layer = 31
+z_index = 5
+position = Vector2(150, 150)
+texture = ExtResource("2_hexkq")

@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cxejh5awopcrt"]
+[gd_scene load_steps=7 format=3 uid="uid://cxejh5awopcrt"]
+
+[ext_resource type="Script" path="res://Scenes/Game Ui/InfoBars/HP.gd" id="1_kmpjl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lrave"]
 bg_color = Color(0.52549, 0.580392, 0.819608, 1)
@@ -88,7 +90,8 @@ offset_bottom = 46.0
 grow_horizontal = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ughtb")
 theme_override_styles/fill = SubResource("StyleBoxFlat_sivlp")
-value = 75.0
+value = 60.0
+script = ExtResource("1_kmpjl")
 
 [node name="XP" type="ProgressBar" parent="PlayerInfoBox"]
 layout_mode = 1
