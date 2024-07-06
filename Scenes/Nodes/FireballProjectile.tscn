@@ -39,5 +39,3 @@ angle_max = 90.0
 scale_amount_min = 7.0
 scale_amount_max = 7.0
 color_ramp = SubResource("Gradient_r7oo3")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]

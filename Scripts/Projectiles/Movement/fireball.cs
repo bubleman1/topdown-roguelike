@@ -9,15 +9,15 @@ public partial class Fireball : Area2D
 	[Export]
 	public float Damage { get; set; } = 10;
 
+	[Signal]
+	public delegate void HasHitEnemyEventHandler(CharacterBody2D body);
+
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		if (!IsConnected("body_entered", new Callable(this, nameof(_on_body_entered))))
-		{
-			Connect("body_entered", new Callable(this, nameof(_on_body_entered)));
-		}
+		BodyEntered += _on_body_entered;
+		AreaEntered += Fireball_AreaEntered;
 	}
-
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
@@ -28,22 +28,31 @@ public partial class Fireball : Area2D
 	{
 		Position += Transform.X * Speed * (float)delta;
 	}
-
-	protected virtual void _on_body_entered(Node2D body)
+	
+	private void _on_body_entered(Node2D body)
 	{
-			if (body.IsInGroup("enemy"))
-			{
-				GD.Print("hit");
-				body.QueueFree();
-				QueueFree();
-			}
-			if(!body.IsInGroup("player"))
-			{
-				QueueFree();
-			}
-			
+		if(!body.IsInGroup("player"))
+		{
+			GD.Print("hit wall");
+			QueueFree();
+		}
+	}
+	private void Fireball_AreaEntered(Area2D area)
+	{
+		if (area.IsInGroup("enemy"))
+		{
+			GDScript slime = GD.Load<GDScript>("res://Scripts/Enemies/Slime/Slime.gd");
+			GodotObject SlimeGD = (GodotObject)slime.New();
+			Signal HasBeenHit = (Signal)SlimeGD.Get("has_been_hit");
+			SlimeGD.EmitSignal(HasBeenHit.Name, Damage, area);
+			GD.Print("hit");
+			QueueFree();
+		}
 	}
 }
+
+
+
 
 
 

@@ -5,10 +5,13 @@ extends CharacterBody2D
 var speed = 150
 var player_chase = false
 var player = null
+var animatedSprite2D
+signal has_been_hit(sender, target)
 
 
 func _ready():
 	add_to_group("enemy")
+	animatedSprite2D = $AnimatedSprite2D
 	
 func _physics_process(_delta):
 	if player_chase:
@@ -16,9 +19,9 @@ func _physics_process(_delta):
 		velocity.y = player.position.y - position.y
 		velocity = velocity.normalized() * speed
 		move_and_collide(velocity * _delta)
-		$AnimatedSprite2D.play("slime_run")
+		animatedSprite2D.play("slime_run")
 	else:
-		$AnimatedSprite2D.play("slime_idle")
+		animatedSprite2D.play("slime_idle")
 	
 
 func _on_detection_area_body_entered(body):
@@ -31,3 +34,10 @@ func _on_detection_area_body_exited(body):
 		player = null
 		player_chase = false
 
+
+
+func _on_has_been_hit(sender, target):
+	print("recieved")
+	if($Area2D==target):
+		Health-=sender
+		print(Health)

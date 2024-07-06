@@ -164,6 +164,5 @@ one_way_collision_margin = 0.0
 position = Vector2(-1, 2)
 shape = SubResource("CircleShape2D_dvepp")
 
-[connection signal="has_been_hit" from="." to="." method="_on_has_been_hit"]
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]

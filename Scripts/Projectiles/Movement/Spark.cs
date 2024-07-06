@@ -5,7 +5,7 @@ public partial class Spark : Fireball
 {
 	public Spark()
 	{
-		Speed = 5000;
+		Speed = 2000;
 		Damage = 5;
 	}
 }
