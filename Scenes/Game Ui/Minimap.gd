@@ -1,5 +1,5 @@
 extends SubViewportContainer
-
+#Minimap is not working you can delete this
 
 @onready var camera = $SubViewport/Camera2D
 @onready var player_marker = $PlayerMarker

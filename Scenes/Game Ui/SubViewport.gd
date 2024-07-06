@@ -1,6 +1,6 @@
 extends SubViewport
 
-
+#Minimap is not working you can delete this
 @onready var camera = $Camera2D
 
 var player_node_path: NodePath

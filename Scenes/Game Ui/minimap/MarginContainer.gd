@@ -1,5 +1,5 @@
 extends MarginContainer
-
+#Minimap is not working you can delete this
 @export var zoom = 1.5
 @export var x = 1000
 

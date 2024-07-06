@@ -11,6 +11,8 @@ public partial class player_script : CharacterBody2D
 	[Export]
 	public float Health { get; set; } = 100;
 	
+	public Vector2 Knockback {get; set; } = Vector2.Zero;
+	
 	public Projectile Ability { get; set; }
 	private AnimatedSprite2D animatedSprite { get; set; }
 	private Marker2D shootingPoint {  get; set; }
@@ -59,8 +61,9 @@ public partial class player_script : CharacterBody2D
 			Shoot();		
 		}	
 
-		velocity = velocity.Normalized() * Speed;
-	}
+		velocity = velocity.Normalized() * Speed + Knockback;
+		Knockback  = Knockback.Lerp(Vector2.Zero, 0.1f);
+	}	
 
 	public void Shoot()
 	{
@@ -95,7 +98,6 @@ public partial class player_script : CharacterBody2D
 		 if (area.IsInGroup("enemy"))
 		{
 			Health -= 10;
-			animatedSprite.FlipH = true;
 		}
 	}
 }

@@ -8,8 +8,8 @@ public partial class FireballRes : Projectile
 		Spell = spellNode.Instantiate<Fireball>();
 	}
 
-    public override void Instantiate()
-    {
-        base.Instantiate<Fireball>();
-    }
+	public override void Instantiate()
+	{
+		base.Instantiate<Fireball>();
+	}
 }
