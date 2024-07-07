@@ -1,31 +1,31 @@
 [gd_scene load_steps=24 format=3 uid="uid://dw7gy7g4p6si5"]
 
 [ext_resource type="Script" path="res://Scripts/Enemies/Slime/Slime.gd" id="1_ciyse"]
-[ext_resource type="Texture2D" uid="uid://dcugmdrdc1s7w" path="res://Assets/SpriteSheets/Enemies/Enemy1/slime_die.png" id="1_smeum"]
 [ext_resource type="Texture2D" uid="uid://c5oenc7oqkkht" path="res://Assets/SpriteSheets/Enemies/Enemy1/slime_idle.png" id="2_gbxcx"]
+[ext_resource type="Texture2D" uid="uid://dcugmdrdc1s7w" path="res://Assets/SpriteSheets/Enemies/Enemy1/slime_death.png" id="2_xq5g1"]
 [ext_resource type="Texture2D" uid="uid://d0ca6jmi17b7o" path="res://Assets/SpriteSheets/Enemies/Enemy1/slime_run.png" id="3_mr4h0"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r6p1k"]
 radius = 4.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ffqb"]
-atlas = ExtResource("1_smeum")
+atlas = ExtResource("2_xq5g1")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0mpvb"]
-atlas = ExtResource("1_smeum")
+atlas = ExtResource("2_xq5g1")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yd1fk"]
-atlas = ExtResource("1_smeum")
+atlas = ExtResource("2_xq5g1")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_incni"]
-atlas = ExtResource("1_smeum")
+atlas = ExtResource("2_xq5g1")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jkwd8"]
-atlas = ExtResource("1_smeum")
+atlas = ExtResource("2_xq5g1")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ce3to"]
@@ -86,7 +86,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jkwd8")
 }],
-"loop": true,
+"loop": false,
 "name": &"slime_death",
 "speed": 5.0
 }, {
@@ -148,7 +148,6 @@ shape = SubResource("CircleShape2D_r6p1k")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_xtb2p")
 animation = &"slime_death"
-frame_progress = 0.0650498
 
 [node name="detection_area" type="Area2D" parent="."]
 collision_layer = 2
@@ -165,6 +164,7 @@ position = Vector2(-1, 2)
 shape = SubResource("CircleShape2D_dvepp")
 
 [connection signal="has_been_hit" from="." to="." method="_on_has_been_hit"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
