@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cf1to6i8cn6kn"]
+[gd_scene load_steps=5 format=3 uid="uid://cf1to6i8cn6kn"]
 
 [ext_resource type="Texture2D" uid="uid://bql8wpb3vfc0m" path="res://Assets/SpriteSheets/Projectiles/spark.png" id="1_akokr"]
 [ext_resource type="Script" path="res://Scripts/Projectiles/Movement/Spark.cs" id="1_pu2ww"]
+[ext_resource type="PackedScene" uid="uid://bjcpr2cutx8yr" path="res://Scenes/Components/DamageComponent.tscn" id="3_o8hgx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r5oso"]
 
@@ -36,3 +37,5 @@ angle_min = 90.0
 angle_max = 90.0
 hue_variation_min = -1.0
 hue_variation_max = 1.0
+
+[node name="DamageComponent" parent="." instance=ExtResource("3_o8hgx")]

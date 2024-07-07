@@ -1,9 +1,9 @@
+Area2D
 CPUParticles2D
 Sprite2D
 AnimatedSprite2D
 Node3D
 CollisionShape2D
-Area2D
 ProgressBar
 CharacterBody2D
 CanvasLayer

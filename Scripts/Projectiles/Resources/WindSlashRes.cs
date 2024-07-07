@@ -9,8 +9,8 @@ public partial class WindSlashRes : Projectile
 		Cooldown = 0.5f;
 	}
 
-	public override void Instantiate()
+	public override Fireball Instantiate()
 	{
-		base.Instantiate<Fireball>();
+		return base.Instantiate<Fireball>();
 	}
 }

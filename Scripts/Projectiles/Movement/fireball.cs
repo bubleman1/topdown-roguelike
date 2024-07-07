@@ -15,7 +15,7 @@ public partial class Fireball : Area2D
 	{
 
 		BodyEntered += _on_body_entered;
-		AreaEntered += Fireball_AreaEntered;
+		AreaEntered += _on_area_entered;
 
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -29,7 +29,7 @@ public partial class Fireball : Area2D
 		Position += Transform.X * Speed * (float)delta;
 	}
 	
-	private void _on_body_entered(Node2D body)
+	protected virtual void _on_body_entered(Node2D body)
 	{
 
 		if(!body.IsInGroup("player"))
@@ -37,7 +37,7 @@ public partial class Fireball : Area2D
 			QueueFree();
 		}
 	}
-	private void Fireball_AreaEntered(Area2D area)
+	protected virtual void _on_area_entered(Area2D area)
 	{
 		if (area.IsInGroup("enemy"))
 		{

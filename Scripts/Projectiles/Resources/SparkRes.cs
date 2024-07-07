@@ -9,8 +9,8 @@ public partial class SparkRes : Projectile
 		Cooldown = 0.3f;	
 	}
 
-	public override void Instantiate()
+	public override Spark Instantiate()
 	{
-		base.Instantiate<Spark>();
+		return base.Instantiate<Spark>();
 	}
 }

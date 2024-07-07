@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c288eso6lprxc"]
+
+[ext_resource type="Script" path="res://Scripts/Projectiles/Movement/TripleFireball.cs" id="1_lggpa"]
+
+[node name="TripleFireball" type="Area2D"]
+script = ExtResource("1_lggpa")

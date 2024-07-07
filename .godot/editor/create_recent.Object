@@ -1,4 +1,4 @@
-CharacterBody2D
-Resource
-Object
 Area2D
+Resource
+CharacterBody2D
+Object

@@ -18,16 +18,16 @@ public partial class Projectile : Resource
 	public float TimeLeft { get; set; } 
 	public bool CanShoot { get; set; }
 
-	protected void Instantiate<T>() where T : Fireball
+	protected virtual T Instantiate<T>() where T : Fireball
 	{
 		Spell = spellNode.Instantiate<T>();
+		return spellNode.Instantiate<T>();
 	}
 
-	public virtual void Instantiate()
+	public virtual Fireball Instantiate()
 	{
-
+		return Instantiate<Fireball>();
 	}
-
 
 	public void ManageTime(double delta)
 	{
