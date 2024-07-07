@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dcugmdrdc1s7w" path="res://Assets/SpriteSheets/Enemies/Enemy1/slime_death.png" id="2_xq5g1"]
 [ext_resource type="PackedScene" uid="uid://dxql7vhorpddg" path="res://Scenes/Components/VelocityComponent.tscn" id="2_yfj4f"]
 [ext_resource type="Texture2D" uid="uid://d0ca6jmi17b7o" path="res://Assets/SpriteSheets/Enemies/Enemy1/slime_run.png" id="3_mr4h0"]
-[ext_resource type="PackedScene" uid="uid://dhyylv0o3byob" path="res://Scenes/Nodes/Health_enemy.tscn" id="5_j6s54"]
+[ext_resource type="PackedScene" uid="uid://dhyylv0o3byob" path="res://Scenes/Components/EnemyHealthBarComponent.tscn" id="5_j6s54"]
 [ext_resource type="PackedScene" uid="uid://bjcpr2cutx8yr" path="res://Scenes/Components/DamageComponent.tscn" id="7_m6owl"]
 [ext_resource type="PackedScene" uid="uid://bmsa8b6ps34ch" path="res://Scenes/Components/DetectionComponent.tscn" id="8_x4p8b"]
 [ext_resource type="PackedScene" uid="uid://02bc0nd15e15" path="res://Scenes/Components/HealthComponent.tscn" id="9_gc8cu"]

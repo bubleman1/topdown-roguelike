@@ -8,8 +8,7 @@ public partial class TripleFireball : Fireball
 	public int NumberOfProjectiles { get; set; } = 3;
 	public TripleFireball() : base()
 	{
-		Speed = 0;
-		Damage = 0;
+		
 		Node2D Base = new Node2D();
 		for (int i = 0; i < NumberOfProjectiles; i++)
 		{

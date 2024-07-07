@@ -27,6 +27,11 @@ public partial class VelocityComponent : Node
 		Velocity.Y = pos.Y - Owner2D.Position.Y;
 	}
 	
+	public void GoStraight(Vector2 direction)
+	{
+		Velocity = direction;
+	}
+	
 	public void KnockbackSelf(){
 		Knockback = -Velocity*SelfKnockbackCoeff;
 	}

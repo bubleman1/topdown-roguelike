@@ -20,8 +20,9 @@ public partial class player_script : CharacterBody2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
+		velocityComponent = GetNode<VelocityComponent>("VelocityComponent");
 		healthComponent = GetNode<HealthComponent>("HealthComponent");
-		Ability = new SparkRes();
+		Ability = new FireballRes();
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		shootingPoint = GetNode<Marker2D>("Marker2D").GetNode<Marker2D>("Marker2D");
 	}

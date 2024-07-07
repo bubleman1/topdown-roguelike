@@ -3,19 +3,23 @@ using System;
 
 public partial class Fireball : Area2D
 {
-
 	[Export]
-	public float Speed { get; set; } = 900;
+	public VelocityComponent velocityComponent {get; set;} 
 	[Export]
-	public float Damage { get; set; } = 50;
-
-
+	public DamageComponent damageComponent {get; set;} 
+	[Export]
+	public HitboxComponent hitboxComponent {get;set;}
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-
-		BodyEntered += _on_body_entered;
-		AreaEntered += _on_area_entered;
+		velocityComponent = GetNode<VelocityComponent>("VelocityComponent");
+		velocityComponent.Speed = 900;
+		damageComponent = GetNode<DamageComponent>("DamageComponent");
+		damageComponent.Damage = 34;
+		hitboxComponent = GetNode<HitboxComponent>("HitboxComponent");
+		BodyEntered += hitboxComponent._on_body_entered;
+		AreaEntered += hitboxComponent._on_area_entered;
+		hitboxComponent.HasHit += DoParticles;
 
 	}
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -26,23 +30,11 @@ public partial class Fireball : Area2D
 
 	public virtual void ProcessMovement(double delta)
 	{
-		Position += Transform.X * Speed * (float)delta;
+		Position += Transform.X * velocityComponent.Speed * (float)delta;
 	}
 	
-	protected virtual void _on_body_entered(Node2D body)
-	{
-
-		if(!body.IsInGroup("player"))
-		{
-			QueueFree();
-		}
-	}
-	protected virtual void _on_area_entered(Area2D area)
-	{
-		if (area.IsInGroup("enemy"))
-		{
-			QueueFree();
-		}
+	public void DoParticles(){
+		QueueFree();
 	}
 }
 

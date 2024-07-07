@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bmsa8b6ps34ch"]
 
-[ext_resource type="Script" path="res://Scripts/DetectionComponent.cs" id="1_p7lwa"]
+[ext_resource type="Script" path="res://Scripts/Components/DetectionComponent.cs" id="1_p7lwa"]
 
 [node name="DetectionComponent" type="Area2D"]
 script = ExtResource("1_p7lwa")

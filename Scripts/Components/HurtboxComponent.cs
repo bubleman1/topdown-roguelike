@@ -14,6 +14,8 @@ public partial class HurtboxComponent : Area2D
 	
 	public override void _Ready()
 	{
+		healthComponent = Owner.GetNode<HealthComponent>("HealthComponent");
+		velocityComponent = Owner.GetNode<VelocityComponent>("VelocityComponent");
 		if(Owner.IsInGroup("enemy"))
 		{
 			AreaEntered += _enemy_on_area_entered;

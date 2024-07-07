@@ -1,13 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://dmsgk0kcvgjfc"]
+[gd_scene load_steps=7 format=3 uid="uid://dmsgk0kcvgjfc"]
 
 [ext_resource type="Script" path="res://Scripts/Projectiles/Movement/Fireball.cs" id="1_s222c"]
 [ext_resource type="SpriteFrames" uid="uid://bdf4jx2a05a3m" path="res://Assets/SpriteAnimations/Projectiles/windSlash.tres" id="2_3tv27"]
+[ext_resource type="PackedScene" uid="uid://dxql7vhorpddg" path="res://Scenes/Components/VelocityComponent.tscn" id="2_mlo2v"]
+[ext_resource type="PackedScene" uid="uid://diucpxaxcw0ok" path="res://Scenes/Components/HitboxComponent.tscn" id="4_0vlw4"]
+[ext_resource type="PackedScene" uid="uid://bjcpr2cutx8yr" path="res://Scenes/Components/DamageComponent.tscn" id="5_q86c1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_v3or4"]
 radius = 45.0999
 
 [node name="WindSlashProjectile" type="Area2D"]
 script = ExtResource("1_s222c")
+
+[node name="VelocityComponent" parent="." instance=ExtResource("2_mlo2v")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_v3or4")
@@ -36,6 +41,10 @@ angle_max = 360.0
 scale_amount_min = 10.0
 scale_amount_max = 10.0
 color = Color(0.47451, 1, 0.47451, 0.443137)
+
+[node name="HitboxComponent" parent="." instance=ExtResource("4_0vlw4")]
+
+[node name="DamageComponent" parent="." instance=ExtResource("5_q86c1")]
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

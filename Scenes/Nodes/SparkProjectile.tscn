@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cf1to6i8cn6kn"]
+[gd_scene load_steps=7 format=3 uid="uid://cf1to6i8cn6kn"]
 
 [ext_resource type="Texture2D" uid="uid://bql8wpb3vfc0m" path="res://Assets/SpriteSheets/Projectiles/spark.png" id="1_akokr"]
 [ext_resource type="Script" path="res://Scripts/Projectiles/Movement/Spark.cs" id="1_pu2ww"]
 [ext_resource type="PackedScene" uid="uid://bjcpr2cutx8yr" path="res://Scenes/Components/DamageComponent.tscn" id="3_o8hgx"]
+[ext_resource type="PackedScene" uid="uid://dxql7vhorpddg" path="res://Scenes/Components/VelocityComponent.tscn" id="4_0wd7k"]
+[ext_resource type="PackedScene" uid="uid://diucpxaxcw0ok" path="res://Scenes/Components/HitboxComponent.tscn" id="5_hvblb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r5oso"]
 
@@ -39,3 +41,7 @@ hue_variation_min = -1.0
 hue_variation_max = 1.0
 
 [node name="DamageComponent" parent="." instance=ExtResource("3_o8hgx")]
+
+[node name="VelocityComponent" parent="." instance=ExtResource("4_0wd7k")]
+
+[node name="HitboxComponent" parent="." instance=ExtResource("5_hvblb")]
