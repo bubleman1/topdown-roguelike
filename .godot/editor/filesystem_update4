@@ -20,3 +20,5 @@ res://Scripts/Projectiles/Resources/WindSlashRes.cs
 res://Scripts/player_script.cs
 res://Scripts/Projectiles/Movement/Spark.cs
 res://Scripts/Enemies/Slime/Slime.gd
+res://Scenes/Nodes/Health_enemy.tscn
+res://Scripts/Health_enemy.gd

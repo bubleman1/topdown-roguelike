@@ -1,9 +1,10 @@
-[gd_scene load_steps=24 format=3 uid="uid://dw7gy7g4p6si5"]
+[gd_scene load_steps=25 format=3 uid="uid://dw7gy7g4p6si5"]
 
 [ext_resource type="Script" path="res://Scripts/Enemies/Slime/Slime.gd" id="1_ciyse"]
 [ext_resource type="Texture2D" uid="uid://c5oenc7oqkkht" path="res://Assets/SpriteSheets/Enemies/Enemy1/slime_idle.png" id="2_gbxcx"]
 [ext_resource type="Texture2D" uid="uid://dcugmdrdc1s7w" path="res://Assets/SpriteSheets/Enemies/Enemy1/slime_death.png" id="2_xq5g1"]
 [ext_resource type="Texture2D" uid="uid://d0ca6jmi17b7o" path="res://Assets/SpriteSheets/Enemies/Enemy1/slime_run.png" id="3_mr4h0"]
+[ext_resource type="PackedScene" uid="uid://dhyylv0o3byob" path="res://Scenes/Nodes/Health_enemy.tscn" id="5_j6s54"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r6p1k"]
 radius = 4.0
@@ -132,7 +133,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wcqk7"]
-radius = 95.0842
+radius = 207.183
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dvepp"]
 radius = 8.0
@@ -162,6 +163,12 @@ one_way_collision_margin = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["enemy"]]
 position = Vector2(-1, 2)
 shape = SubResource("CircleShape2D_dvepp")
+
+[node name="HealthEnemy" parent="." instance=ExtResource("5_j6s54")]
+offset_left = -9.0
+offset_top = -11.0
+offset_right = 9.0
+offset_bottom = -8.0
 
 [connection signal="has_been_hit" from="." to="." method="_on_has_been_hit"]
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720307423
+::res://::1720346555
 atlas.png::CompressedTexture2D::806458849398850060::1720303371::1720303371::1::::<><>::
 export_presets.cfg::TextFile::-1::1720111877::0::1::::<><>::
 icon.svg::CompressedTexture2D::4035083160992765361::1720111877::1720111877::1::::<><>::
@@ -18,12 +18,12 @@ simpleSpace_tilesheet@2.png::CompressedTexture2D::1528981632918174932::172011187
 PixelOperator8-Bold.ttf::FontFile::3116816872665697020::1720111877::1720111877::1::::<><>::
 PixelOperator8.ttf::FontFile::309117294425877048::1720111877::1720111877::1::::<><>::
 ::res://Assets/SpriteAnimations/::1720111877
-::res://Assets/SpriteAnimations/Player/::1720307050
+::res://Assets/SpriteAnimations/Player/::1720348031
 Black.tres::SpriteFrames::1313567565506667660::1720111877::0::1::::<><>::uid://cfic421b2n4h5::::res://Assets/SpriteSheets/Player/player_wizardSheetBlack.png
 Green.tres::SpriteFrames::720715664776443320::1720111877::0::1::::<><>::uid://4sl13ix4qlbj::::res://Assets/SpriteSheets/Player/player_wizardSheetGreen-export.png
 Purple.tres::SpriteFrames::8008415280651048888::1720111877::0::1::::<><>::uid://cg1hr5iarrqfr::::res://Assets/SpriteSheets/Player/player_wizardSheetPurple-export.png
 Red.tres::SpriteFrames::5037013312441109248::1720111877::0::1::::<><>::uid://cosvf462x8j7t::::res://Assets/SpriteSheets/Player/player_wizardSheetRed-export.png
-Wizard.tres::SpriteFrames::818226993952610611::1720307050::0::1::::<><>::uid://cvglks6l3xc5d::::res://Assets/SpriteSheets/Player/player_wizardSheet-export.png
+Wizard.tres::SpriteFrames::818226993952610611::1720348031::0::1::::<><>::uid://cvglks6l3xc5d::::res://Assets/SpriteSheets/Player/player_wizardSheet-export.png
 ::res://Assets/SpriteAnimations/Projectiles/::1720111877
 fireball.tres::SpriteFrames::232906463958714990::1720111877::0::1::::<><>::uid://chyoo2mc4v73a::::res://Assets/SpriteSheets/Projectiles/SmolFIreball.png
 windSlash.tres::SpriteFrames::2609087218094229636::1720111877::0::1::::<><>::uid://waiksmwi2ktp::::res://Assets/SpriteSheets/Projectiles/Windslash.png
@@ -49,10 +49,10 @@ SmolFIreball.png::CompressedTexture2D::5314584814761857264::1720111877::17201118
 snow_magic-Sheet.png::CompressedTexture2D::7478794085760155123::1720297948::1720297959::1::::<><>::
 spark.png::CompressedTexture2D::3534194076118988958::1720290638::1720290638::1::::<><>::
 Windslash.png::CompressedTexture2D::1544659118887192149::1720111877::1720111877::1::::<><>::
-::res://Assets/Styles/::1720307050
+::res://Assets/Styles/::1720348031
 ButtonHoverPauseMenu.tres::StyleBoxFlat::309359018889800022::1720111877::0::1::::<><>::
 ButtonPauseMenu.tres::StyleBoxFlat::7692272165754766092::1720111877::0::1::::<><>::
-main_menu.tres::Theme::4470943454092689800::1720307050::0::1::::<><>::
+main_menu.tres::Theme::4470943454092689800::1720348031::0::1::::<><>::
 ::res://Assets/Tiles/::1720111877
 ::res://Assets/Tiles/StoneSlab/::1720111877
 smallStoneTilesx32.png::CompressedTexture2D::8122397549712691687::1720111877::1720111877::1::::<><>::
@@ -69,28 +69,28 @@ enemies.tres::TileSet::914351419996860870::1720297564::0::1::::<><>::
 ::res://Resources/::1720126580
 Fireball.tres::Resource::2586382163663526808::1720111877::0::1::::<><>::res://Scripts/Projectiles/Resources/FireballRes.cs
 WindSlash.tres::Resource::7720607962521785518::1720111877::0::1::::<><>::res://Scripts/Projectiles/Resources/WindSlashRes.cs
-::res://Scenes/::1720307174
-Game1.tscn::PackedScene::793583652828915676::1720307174::0::1::::<><>::uid://dnqmtnosgyxqi::::res://Scenes/Nodes/WizardPlayer.tscn<>uid://mmry1e5qighb::::res://Assets/Tiles/StoneSlab/smallStoneTilesx64.png<>uid://bft3gim0ciqd8::::res://Assets/Tiles/Wood/flushWoodTileFill.png<>uid://lqwi25ojsqwa::::res://atlas.png<>res://Scripts/EnemyTileMap.gd<>uid://yc7rtxn4rv5w::::res://Scenes/PauseMenu.tscn<>uid://cxejh5awopcrt::::res://Scenes/Game Ui/InfoBars/Bars.tscn<>uid://dw7gy7g4p6si5::::res://Scenes/Nodes/Slime.tscn<>uid://dpqvobiv8lfqq::::res://Scenes/Game Ui/minimap/MarginContainer.tscn
-main_menu.tscn::PackedScene::1472990872027683910::1720307173::0::1::::<><>::res://Scripts/main_menu.gd<>uid://dwpegt6f6wvjx::::res://Assets/Backgrounds/backiee-264640-landscape.jpg<>uid://bkn2rvn6fk4no::::res://Assets/fonts/PixelOperator8-Bold.ttf<>uid://b4x01yalyifn1::::res://Assets/Styles/main_menu.tres
+::res://Scenes/::1720348765
+Game1.tscn::PackedScene::793583652828915676::1720348765::0::1::::<><>::uid://dnqmtnosgyxqi::::res://Scenes/Nodes/WizardPlayer.tscn<>uid://mmry1e5qighb::::res://Assets/Tiles/StoneSlab/smallStoneTilesx64.png<>uid://bft3gim0ciqd8::::res://Assets/Tiles/Wood/flushWoodTileFill.png<>uid://lqwi25ojsqwa::::res://atlas.png<>res://Scripts/EnemyTileMap.gd<>uid://yc7rtxn4rv5w::::res://Scenes/PauseMenu.tscn<>uid://cxejh5awopcrt::::res://Scenes/Game Ui/InfoBars/Bars.tscn<>uid://dw7gy7g4p6si5::::res://Scenes/Nodes/Slime.tscn<>uid://dpqvobiv8lfqq::::res://Scenes/Game Ui/minimap/MarginContainer.tscn
+main_menu.tscn::PackedScene::1472990872027683910::1720348765::0::1::::<><>::res://Scripts/main_menu.gd<>uid://dwpegt6f6wvjx::::res://Assets/Backgrounds/backiee-264640-landscape.jpg<>uid://bkn2rvn6fk4no::::res://Assets/fonts/PixelOperator8-Bold.ttf<>uid://b4x01yalyifn1::::res://Assets/Styles/main_menu.tres
 options_main_menu.tscn::PackedScene::4744812809803649737::1720270959::0::1::::<><>::res://Scripts/options_main_menu.gd<>uid://dwpegt6f6wvjx::::res://Assets/Backgrounds/backiee-264640-landscape.jpg<>uid://bkn2rvn6fk4no::::res://Assets/fonts/PixelOperator8-Bold.ttf<>uid://b4x01yalyifn1::::res://Assets/Styles/main_menu.tres
 PauseMenu.tscn::PackedScene::1690635339190068894::1720270959::0::1::::<><>::uid://dhugumd5lyuga::::res://Assets/Styles/ButtonPauseMenu.tres<>res://Scripts/PauseMenu.gd<>uid://en4dldvnelgo::::res://Assets/Styles/ButtonHoverPauseMenu.tres
 ::res://Scenes/Game Ui/::1720290849
 Minimap.gd::GDScript::-1::1720290849::0::1::::<>SubViewportContainer<>::
 Minimap.tscn::PackedScene::8780130759115040694::1720270959::0::1::::<><>::uid://v1wdsl3ergjc::::res://Assets/Backgrounds/Minimap/simpleSpace_tilesheet@2.png<>res://Scenes/Game Ui/SubViewport.gd
 SubViewport.gd::GDScript::-1::1720290849::0::1::::<>SubViewport<>::
-::res://Scenes/Game Ui/InfoBars/::1720307173
-Bars.tscn::PackedScene::6396002812288803317::1720307173::0::1::::<><>::res://Scenes/Game Ui/InfoBars/HP.gd
-HP.gd::GDScript::-1::1720307050::0::1::::<>ProgressBar<>::
-::res://Scenes/Game Ui/minimap/::1720307050
-MarginContainer.gd::GDScript::-1::1720307050::0::1::::<>MarginContainer<>::
+::res://Scenes/Game Ui/InfoBars/::1720348765
+Bars.tscn::PackedScene::6396002812288803317::1720348765::0::1::::<><>::res://Scenes/Game Ui/InfoBars/HP.gd
+HP.gd::GDScript::-1::1720348031::0::1::::<>ProgressBar<>::
+::res://Scenes/Game Ui/minimap/::1720348031
+MarginContainer.gd::GDScript::-1::1720348031::0::1::::<>MarginContainer<>::
 MarginContainer.tscn::PackedScene::8246424873557976780::1720270959::0::1::::<><>::res://Scenes/Game Ui/minimap/MarginContainer.gd<>uid://dlwhwlr16f4mj::::res://Assets/Backgrounds/Minimap/minimap-border.png<>uid://v1wdsl3ergjc::::res://Assets/Backgrounds/Minimap/simpleSpace_tilesheet@2.png<>uid://dnysx3kahsmbv::::res://Assets/Tiles/StoneSlab/smallStoneTilesx32.png
-::res://Scenes/Nodes/::1720307423
-FireballProjectile.tscn::PackedScene::1639427612275568173::1720307174::0::1::::<><>::res://Scripts/Projectiles/Movement/Fireball.cs<>uid://dk262mjiogf3::::res://Assets/SpriteAnimations/Projectiles/fireball.tres
-Slime.tscn::PackedScene::8769885551611187710::1720307423::0::1::::<><>::res://Scripts/Enemies/Slime/Slime.gd<>uid://dcugmdrdc1s7w::::res://Assets/SpriteSheets/Enemies/Enemy1/slime_death.png<>uid://c5oenc7oqkkht::::res://Assets/SpriteSheets/Enemies/Enemy1/slime_idle.png<>uid://d0ca6jmi17b7o::::res://Assets/SpriteSheets/Enemies/Enemy1/slime_run.png
-SparkProjectile.tscn::PackedScene::5178639673244028165::1720307174::0::1::::<><>::uid://bql8wpb3vfc0m::::res://Assets/SpriteSheets/Projectiles/spark.png<>res://Scripts/Projectiles/Movement/Spark.cs
-WindSlashProjectile.tscn::PackedScene::8039070462855393552::1720307174::0::1::::<><>::res://Scripts/Projectiles/Movement/Fireball.cs<>uid://bdf4jx2a05a3m::::res://Assets/SpriteAnimations/Projectiles/windSlash.tres
-WizardPlayer.tscn::PackedScene::8105510301693710948::1720307174::0::1::::<><>::res://Scripts/player_script.cs<>uid://lwmcxm261sch::::res://Assets/SpriteAnimations/Player/Wizard.tres<>res://Scripts/shooting_point.cs
-::res://Scripts/::1720307050
+::res://Scenes/Nodes/::1720348765
+FireballProjectile.tscn::PackedScene::1639427612275568173::1720348765::0::1::::<><>::res://Scripts/Projectiles/Movement/Fireball.cs<>uid://dk262mjiogf3::::res://Assets/SpriteAnimations/Projectiles/fireball.tres
+Slime.tscn::PackedScene::8769885551611187710::1720348765::0::1::::<><>::res://Scripts/Enemies/Slime/Slime.gd<>uid://c5oenc7oqkkht::::res://Assets/SpriteSheets/Enemies/Enemy1/slime_idle.png<>uid://dcugmdrdc1s7w::::res://Assets/SpriteSheets/Enemies/Enemy1/slime_death.png<>uid://d0ca6jmi17b7o::::res://Assets/SpriteSheets/Enemies/Enemy1/slime_run.png
+SparkProjectile.tscn::PackedScene::5178639673244028165::1720348765::0::1::::<><>::uid://bql8wpb3vfc0m::::res://Assets/SpriteSheets/Projectiles/spark.png<>res://Scripts/Projectiles/Movement/Spark.cs
+WindSlashProjectile.tscn::PackedScene::8039070462855393552::1720348765::0::1::::<><>::res://Scripts/Projectiles/Movement/Fireball.cs<>uid://bdf4jx2a05a3m::::res://Assets/SpriteAnimations/Projectiles/windSlash.tres
+WizardPlayer.tscn::PackedScene::8105510301693710948::1720348765::0::1::::<><>::res://Scripts/player_script.cs<>uid://lwmcxm261sch::::res://Assets/SpriteAnimations/Player/Wizard.tres<>res://Scripts/shooting_point.cs
+::res://Scripts/::1720348031
 EnemyTileMap.gd::GDScript::-1::1720303371::0::1::::<>TileMap<>::
 main_menu.gd::GDScript::-1::1720111877::0::1::::<>Control<>::
 options_main_menu.gd::GDScript::-1::1720111877::0::1::::<>Control<>::
@@ -98,14 +98,14 @@ PauseMenu.gd::GDScript::-1::1720111877::0::1::::<>Control<>::
 player_script.cs::CSharpScript::-1::1720295797::0::1::::<>CharacterBody2D<>::
 Projectile.cs::CSharpScript::-1::1720290638::0::1::::<>Resource<>::
 shooting_point.cs::CSharpScript::-1::1720111877::0::1::::<>Marker2D<>::
-SubViewport1.gd::GDScript::-1::1720307050::0::1::::<>SubViewport<>::
+SubViewport1.gd::GDScript::-1::1720348031::0::1::::<>SubViewport<>::
 ::res://Scripts/Enemies/::1720290849
 Health_enemy.tscn::PackedScene::7701607016486357765::1720290849::0::1::::<><>::
-::res://Scripts/Enemies/Slime/::1720307423
-Slime.gd::GDScript::-1::1720307423::0::1::::<>CharacterBody2D<>::
+::res://Scripts/Enemies/Slime/::1720348686
+Slime.gd::GDScript::-1::1720348686::0::1::::<>CharacterBody2D<>::
 ::res://Scripts/Projectiles/::1720111877
-::res://Scripts/Projectiles/Movement/::1720307050
-Fireball.cs::CSharpScript::-1::1720307050::0::1::::<>Area2D<>::
+::res://Scripts/Projectiles/Movement/::1720348031
+Fireball.cs::CSharpScript::-1::1720348031::0::1::::<>Area2D<>::
 Spark.cs::CSharpScript::-1::1720292373::0::1::::<>Area2D<>::
 ::res://Scripts/Projectiles/Resources/::1720291682
 FireballRes.cs::CSharpScript::-1::1720291682::0::1::::<>Resource<>::

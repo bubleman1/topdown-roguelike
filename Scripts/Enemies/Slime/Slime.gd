@@ -1,16 +1,20 @@
 extends CharacterBody2D
 
-@export var health = 100
 @export var damage = 10
 @export var knockback = 15 #knockbacks player
 @export var s_knockback = 5 #knockbacks itself
 
+@export var max_health = 500
+var min_health = 0
+var curr_health
 
 var is_alive = true
 var  slime_knockback = Vector2.ZERO
 var speed = 150
+
 var player_chase = false
 var player = null
+
 var animatedSprite2D
 signal has_been_hit(sender, target)
 
@@ -18,6 +22,7 @@ signal has_been_hit(sender, target)
 func _ready():
 	add_to_group("enemy")
 	animatedSprite2D = $AnimatedSprite2D
+	curr_health = max_health
 	
 func _physics_process(_delta):
 	if is_alive == false:
@@ -29,10 +34,16 @@ func _physics_process(_delta):
 		velocity = velocity.normalized() * speed + slime_knockback
 		move_and_collide(velocity * _delta)
 		animatedSprite2D.play("slime_run")
+		if (player.position.x - position.x) < 0 :
+			animatedSprite2D.flip_h = true
+		else:
+			animatedSprite2D.flip_h = false
+			
 	else:
 		animatedSprite2D.play("slime_idle")
 	slime_knockback = slime_knockback.lerp(Vector2.ZERO, 0.1) # knockback goes towards (0, 0) higher 
 															  # const less knockback
+	
 
 
 func _on_detection_area_body_entered(body):
@@ -51,9 +62,9 @@ func _on_detection_area_body_exited(body):
 
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("projectile"):
-		health -= area.Damage
-		slime_knockback = area.Velocity * s_knockback
-		if health <= 0:
+		curr_health -= area.Damage
+		#slime_knockback = area.Velocity * s_knockback
+		if curr_health <= 0:
 			die()
 	if area.is_in_group("player"):
 		player.Health -= damage
