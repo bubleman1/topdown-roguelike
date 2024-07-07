@@ -18,6 +18,7 @@ res://Scenes/Components/EnemyHealthBarComponent.tscn
 res://Scenes/Nodes/SparkProjectile.tscn
 res://Scenes/Nodes/WindSlashProjectile.tscn
 res://Scripts/Projectiles/Movement/Spark.cs
+<<<<<<< Updated upstream
 res://Scripts/Projectiles/Resources/SparkRes.cs
 res://Scripts/Components/DetectionComponent.cs
 res://Scripts/Components/HealthComponent.cs
@@ -31,3 +32,10 @@ res://Scripts/Projectiles/Resources/FireballRes.cs
 res://Scripts/Projectiles/Resources/TripleFireballRes.cs
 res://Scripts/Projectiles/Resources/WindSlashRes.cs
 res://Scripts/shooting_point.cs
+=======
+res://Scripts/Enemies/Slime/Slime.gd
+res://Scenes/Nodes/Health_enemy.tscn
+res://Scripts/Health_enemy.gd
+res://BaseEnemy.gd
+res://Scripts/EnemyTileMap.gd
+>>>>>>> Stashed changes
