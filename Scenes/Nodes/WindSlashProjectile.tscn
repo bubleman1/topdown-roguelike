@@ -9,8 +9,11 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_v3or4"]
 radius = 45.0999
 
-[node name="WindSlashProjectile" type="Area2D"]
+[node name="WindSlashProjectile" type="Area2D" node_paths=PackedStringArray("velocityComponent", "damageComponent", "hitboxComponent") groups=["projectile"]]
 script = ExtResource("1_s222c")
+velocityComponent = NodePath("VelocityComponent")
+damageComponent = NodePath("DamageComponent")
+hitboxComponent = NodePath("HitboxComponent")
 
 [node name="VelocityComponent" parent="." instance=ExtResource("2_mlo2v")]
 

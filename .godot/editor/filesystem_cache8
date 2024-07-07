@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720369061
+::res://::1720369191
 atlas.png::CompressedTexture2D::806458849398850060::1720301932::1720301932::1::::<><>::
 export_presets.cfg::TextFile::-1::1718978522::0::1::::<><>::
 icon.svg::CompressedTexture2D::4035083160992765361::1718978522::1718978522::1::::<><>::
@@ -74,10 +74,10 @@ Game1.tscn::PackedScene::793583652828915676::1720364896::0::1::::<><>::uid://dnq
 main_menu.tscn::PackedScene::1472990872027683910::1720368922::0::1::::<><>::res://Scripts/main_menu.gd<>uid://dwpegt6f6wvjx::::res://Assets/Backgrounds/backiee-264640-landscape.jpg<>uid://bkn2rvn6fk4no::::res://Assets/fonts/PixelOperator8-Bold.ttf<>uid://b4x01yalyifn1::::res://Assets/Styles/main_menu.tres
 options_main_menu.tscn::PackedScene::4744812809803649737::1719449648::0::1::::<><>::res://Scripts/options_main_menu.gd<>uid://dwpegt6f6wvjx::::res://Assets/Backgrounds/backiee-264640-landscape.jpg<>uid://bkn2rvn6fk4no::::res://Assets/fonts/PixelOperator8-Bold.ttf<>uid://b4x01yalyifn1::::res://Assets/Styles/main_menu.tres
 PauseMenu.tscn::PackedScene::1690635339190068894::1719431037::0::1::::<><>::uid://dhugumd5lyuga::::res://Assets/Styles/ButtonPauseMenu.tres<>res://Scripts/PauseMenu.gd<>uid://en4dldvnelgo::::res://Assets/Styles/ButtonHoverPauseMenu.tres
-::res://Scenes/Components/::1720369061
+::res://Scenes/Components/::1720369070
 DamageComponent.tscn::PackedScene::3023191567486496813::1720368922::0::1::::<><>::res://Scripts/Components/DamageComponent.cs
 DetectionComponent.tscn::PackedScene::3265904639240433759::1720368922::0::1::::<><>::res://Scripts/Components/DetectionComponent.cs
-EnemyHealthBarComponent.tscn::PackedScene::7701607016486357765::1720369070::0::1::::<><>::res://Scripts/EnemyHealthBarComponent.gd
+EnemyHealthBarComponent.tscn::PackedScene::7701607016486357765::1720369070::0::1::::<><>::res://Scripts/Components/EnemyHealthBarComponent.gd
 HealthComponent.tscn::PackedScene::1810524912229446482::1720367646::0::1::::<><>::res://Scripts/Components/HealthComponent.cs
 HitboxComponent.tscn::PackedScene::7762209785244498938::1720368922::0::1::::<><>::res://Scripts/Components/HitboxComponent.cs
 HurtboxComponent.tscn::PackedScene::6552962727184005078::1720368922::0::1::::<><>::res://Scripts/Components/HurtboxComponent.cs
@@ -92,15 +92,14 @@ HP.gd::GDScript::-1::1720367969::0::1::::<>ProgressBar<>::
 ::res://Scenes/Game Ui/minimap/::1720367969
 MarginContainer.gd::GDScript::-1::1720367969::0::1::::<>MarginContainer<>::
 MarginContainer.tscn::PackedScene::8246424873557976780::1720183313::0::1::::<><>::res://Scenes/Game Ui/minimap/MarginContainer.gd<>uid://dlwhwlr16f4mj::::res://Assets/Backgrounds/Minimap/minimap-border.png<>uid://v1wdsl3ergjc::::res://Assets/Backgrounds/Minimap/simpleSpace_tilesheet@2.png<>uid://dnysx3kahsmbv::::res://Assets/Tiles/StoneSlab/smallStoneTilesx32.png
-::res://Scenes/Nodes/::1720369001
+::res://Scenes/Nodes/::1720369083
 FireballProjectile.tscn::PackedScene::1639427612275568173::1720368922::0::1::::<><>::res://Scripts/Projectiles/Movement/Fireball.cs<>uid://dk262mjiogf3::::res://Assets/SpriteAnimations/Projectiles/fireball.tres<>uid://dxql7vhorpddg::::res://Scenes/Components/VelocityComponent.tscn<>uid://bjcpr2cutx8yr::::res://Scenes/Components/DamageComponent.tscn<>uid://diucpxaxcw0ok::::res://Scenes/Components/HitboxComponent.tscn
 Slime.tscn::PackedScene::8769885551611187710::1720368922::0::1::::<><>::res://Scripts/Enemies/Slime/Slime.gd<>uid://c5oenc7oqkkht::::res://Assets/SpriteSheets/Enemies/Enemy1/slime_idle.png<>uid://dcugmdrdc1s7w::::res://Assets/SpriteSheets/Enemies/Enemy1/slime_death.png<>uid://dxql7vhorpddg::::res://Scenes/Components/VelocityComponent.tscn<>uid://d0ca6jmi17b7o::::res://Assets/SpriteSheets/Enemies/Enemy1/slime_run.png<>uid://dhyylv0o3byob::::res://Scenes/Components/EnemyHealthBarComponent.tscn<>uid://bjcpr2cutx8yr::::res://Scenes/Components/DamageComponent.tscn<>uid://bmsa8b6ps34ch::::res://Scenes/Components/DetectionComponent.tscn<>uid://02bc0nd15e15::::res://Scenes/Components/HealthComponent.tscn<>uid://c0mklrs6titus::::res://Scenes/Components/HurtboxComponent.tscn
 SparkProjectile.tscn::PackedScene::5178639673244028165::1720369001::0::1::::<><>::uid://bql8wpb3vfc0m::::res://Assets/SpriteSheets/Projectiles/spark.png<>res://Scripts/Projectiles/Movement/Spark.cs<>uid://bjcpr2cutx8yr::::res://Scenes/Components/DamageComponent.tscn<>uid://dxql7vhorpddg::::res://Scenes/Components/VelocityComponent.tscn<>uid://diucpxaxcw0ok::::res://Scenes/Components/HitboxComponent.tscn
 TripleFireball.tscn::PackedScene::6738076383905334236::1720364969::0::1::::<><>::res://Scripts/Projectiles/Movement/TripleFireball.cs
-WindSlashProjectile.tscn::PackedScene::8039070462855393552::1720364896::0::1::::<><>::res://Scripts/Projectiles/Movement/Fireball.cs<>uid://bdf4jx2a05a3m::::res://Assets/SpriteAnimations/Projectiles/windSlash.tres
+WindSlashProjectile.tscn::PackedScene::8039070462855393552::1720369083::0::1::::<><>::res://Scripts/Projectiles/Movement/Fireball.cs<>uid://bdf4jx2a05a3m::::res://Assets/SpriteAnimations/Projectiles/windSlash.tres<>uid://dxql7vhorpddg::::res://Scenes/Components/VelocityComponent.tscn<>uid://diucpxaxcw0ok::::res://Scenes/Components/HitboxComponent.tscn<>uid://bjcpr2cutx8yr::::res://Scenes/Components/DamageComponent.tscn
 WizardPlayer.tscn::PackedScene::8105510301693710948::1720368922::0::1::::<><>::res://Scripts/player_script.cs<>uid://lwmcxm261sch::::res://Assets/SpriteAnimations/Player/Wizard.tres<>res://Scripts/shooting_point.cs<>uid://dxql7vhorpddg::::res://Scenes/Components/VelocityComponent.tscn<>uid://02bc0nd15e15::::res://Scenes/Components/HealthComponent.tscn<>uid://c0mklrs6titus::::res://Scenes/Components/HurtboxComponent.tscn
-::res://Scripts/::1720369061
-EnemyHealthBarComponent.gd::GDScript::-1::1720368958::0::1::::<>ProgressBar<>::
+::res://Scripts/::1720369070
 EnemyTileMap.gd::GDScript::-1::1720302534::0::1::::<>TileMap<>::
 main_menu.gd::GDScript::-1::1719167037::0::1::::<>Control<>::
 options_main_menu.gd::GDScript::-1::1719431037::0::1::::<>Control<>::
@@ -109,9 +108,10 @@ player_script.cs::CSharpScript::-1::1720367929::0::1::::<>CharacterBody2D<>::
 Projectile.cs::CSharpScript::-1::1720364969::0::1::::<>Resource<>::
 shooting_point.cs::CSharpScript::-1::1719439215::0::1::::<>Marker2D<>::
 SubViewport1.gd::GDScript::-1::1720367969::0::1::::<>SubViewport<>::
-::res://Scripts/Components/::1720368652
+::res://Scripts/Components/::1720369070
 DamageComponent.cs::CSharpScript::-1::1720367969::0::1::::<>Node2D<>::
 DetectionComponent.cs::CSharpScript::-1::1720364969::0::1::::<>Area2D<>::
+EnemyHealthBarComponent.gd::GDScript::-1::1720368958::0::1::::<>ProgressBar<>::
 HealthComponent.cs::CSharpScript::-1::1720364969::0::1::::<>Node2D<>::
 HitboxComponent.cs::CSharpScript::-1::1720368652::0::1::::<>Node2D<>::
 HurtboxComponent.cs::CSharpScript::-1::1720368225::0::1::::<>Area2D<>::

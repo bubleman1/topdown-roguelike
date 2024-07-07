@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class Spark
+public partial class Spark : Area2D
 {
 [Export]
 	public VelocityComponent velocityComponent {get; set;} 

@@ -22,7 +22,7 @@ public partial class player_script : CharacterBody2D
 	{
 		velocityComponent = GetNode<VelocityComponent>("VelocityComponent");
 		healthComponent = GetNode<HealthComponent>("HealthComponent");
-		Ability = new FireballRes();
+		Ability = new WindSlashRes();
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		shootingPoint = GetNode<Marker2D>("Marker2D").GetNode<Marker2D>("Marker2D");
 	}
@@ -68,7 +68,7 @@ public partial class player_script : CharacterBody2D
 
 	public void Shoot()
 	{
-		Fireball projectile = Ability.Instantiate();
+		Area2D projectile = Ability.Instantiate();
 		Owner.AddChild(projectile);
 		projectile.Transform = shootingPoint.GlobalTransform;
 	}

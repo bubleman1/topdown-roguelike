@@ -11,20 +11,20 @@ public partial class Projectile : Resource
 	}
 
 	protected PackedScene spellNode { get; set; }
-	public Fireball Spell {get;set;}
+	public Area2D Spell {get;set;}
 
 	[Export]
 	public float Cooldown { get; set; }
 	public float TimeLeft { get; set; } 
 	public bool CanShoot { get; set; }
 
-	protected virtual T Instantiate<T>() where T : Fireball
+	protected virtual T Instantiate<T>() where T : Area2D
 	{
 		Spell = spellNode.Instantiate<T>();
 		return spellNode.Instantiate<T>();
 	}
 
-	public virtual Fireball Instantiate()
+	public virtual Area2D Instantiate()
 	{
 		return Instantiate<Fireball>();
 	}
