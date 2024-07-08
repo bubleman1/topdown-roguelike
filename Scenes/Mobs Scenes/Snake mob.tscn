@@ -1,7 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://c4grcx5ftuthl"]
+[gd_scene load_steps=17 format=3 uid="uid://c4grcx5ftuthl"]
 
 [ext_resource type="Texture2D" uid="uid://b15nrdkilk6h8" path="res://Assets/SpriteSheets/Enemies/Snake Enemy Test/Snake idle.png" id="1_42quh"]
+[ext_resource type="Script" path="res://Scripts/Enemies/Snake.cs" id="1_gxirl"]
 [ext_resource type="PackedScene" uid="uid://02bc0nd15e15" path="res://Scenes/Components/HealthComponent.tscn" id="2_d3orh"]
+[ext_resource type="PackedScene" uid="uid://bjcpr2cutx8yr" path="res://Scenes/Components/DamageComponent.tscn" id="3_dk60u"]
+[ext_resource type="PackedScene" uid="uid://bmsa8b6ps34ch" path="res://Scenes/Components/DetectionComponent.tscn" id="4_i5slk"]
+[ext_resource type="PackedScene" uid="uid://c0mklrs6titus" path="res://Scenes/Components/HurtboxComponent.tscn" id="5_pf8k0"]
+[ext_resource type="PackedScene" uid="uid://dxql7vhorpddg" path="res://Scenes/Components/VelocityComponent.tscn" id="6_bjgrc"]
+[ext_resource type="PackedScene" uid="uid://dhyylv0o3byob" path="res://Scenes/Components/EnemyHealthBarComponent.tscn" id="7_35evl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5jgdl"]
 atlas = ExtResource("1_42quh")
@@ -40,9 +46,21 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f1uex"]
+radius = 15.0
 
-[node name="SnakeMob" type="CharacterBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_2aqn4"]
+radius = 303.031
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cjgbw"]
+radius = 17.0
+height = 35.3333
+
+[node name="SnakeMob" type="CharacterBody2D" node_paths=PackedStringArray("velocityComponent", "hurtboxComponent", "detectionComponent") groups=["enemy"]]
 scale = Vector2(3, 3)
+script = ExtResource("1_gxirl")
+velocityComponent = NodePath("VelocityComponent")
+hurtboxComponent = NodePath("HurtboxComponent")
+detectionComponent = NodePath("DetectionComponent")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_s1soh")
@@ -53,3 +71,27 @@ autoplay = "Snake Idle"
 shape = SubResource("CapsuleShape2D_f1uex")
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_d3orh")]
+
+[node name="DamageComponent" parent="." instance=ExtResource("3_dk60u")]
+
+[node name="DetectionComponent" parent="." instance=ExtResource("4_i5slk")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionComponent"]
+position = Vector2(1.33333, -1.66667)
+shape = SubResource("CircleShape2D_2aqn4")
+
+[node name="HurtboxComponent" parent="." node_paths=PackedStringArray("healthComponent", "velocityComponent") groups=["enemy"] instance=ExtResource("5_pf8k0")]
+healthComponent = NodePath("../HealthComponent")
+velocityComponent = NodePath("../VelocityComponent")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
+shape = SubResource("CapsuleShape2D_cjgbw")
+
+[node name="VelocityComponent" parent="." instance=ExtResource("6_bjgrc")]
+Speed = 300.0
+
+[node name="EnemyHealthBar" parent="." instance=ExtResource("7_35evl")]
+offset_left = -20.0
+offset_top = -25.0
+offset_right = 23.0
+offset_bottom = -19.0
