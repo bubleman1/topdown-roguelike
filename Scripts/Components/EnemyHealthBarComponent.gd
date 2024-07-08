@@ -10,7 +10,7 @@ func _ready():
 	min_value_amount = 0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	self.value = (healthComponent.Health/max_value_amount) * 100
 	if healthComponent.Health != max_value_amount:
 		self.visible = true
