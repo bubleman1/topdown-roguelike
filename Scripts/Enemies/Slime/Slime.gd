@@ -1,14 +1,14 @@
 extends CharacterBody2D
 
 
-@export var max_health = 50
+@export var max_health = 5
 var min_health = 0
 var curr_health
 var detectionComponent
 var hurtboxComponent
 var velocityComponent
 var is_alive = true
-var enemy_size = 4
+var enemy_size = 6
 var animatedSprite2D
 
 
@@ -30,9 +30,8 @@ func _physics_process(_delta):
 		return
 	
 	if detectionComponent.Player!=null:
+		velocityComponent.Speed = 300
 		velocityComponent.GoTo(detectionComponent.Player.position)
-		velocityComponent.ProcessVelocity()
-		move_and_collide(velocityComponent.Velocity * _delta)
 		animatedSprite2D.play("slime_run")
 		if velocityComponent.Velocity.x < 0:
 			animatedSprite2D.flip_h = true
@@ -41,6 +40,11 @@ func _physics_process(_delta):
 			
 	else:
 		animatedSprite2D.play("slime_idle")
+		velocityComponent.Speed = 75
+		velocityComponent.RandomMovement(_delta)
+	velocityComponent.ProcessVelocity()
+	move_and_collide(velocityComponent.Velocity * _delta)
+		
 	velocityComponent.ProcessKnockback() # knockback goes towards (0, 0) higher 
 															  # const less knockback
 

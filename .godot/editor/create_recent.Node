@@ -1,13 +1,11 @@
-<<<<<<< Updated upstream
+ReferenceRect
+CollisionShape2D
 Area2D
-=======
 Timer
->>>>>>> Stashed changes
 CPUParticles2D
 Sprite2D
 AnimatedSprite2D
 Node3D
-CollisionShape2D
 ProgressBar
 CharacterBody2D
 CanvasLayer
@@ -15,4 +13,3 @@ TextureRect
 MarginContainer
 NinePatchRect
 Camera2D
-Panel

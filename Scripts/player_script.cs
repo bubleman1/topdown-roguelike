@@ -22,7 +22,7 @@ public partial class player_script : CharacterBody2D
 	{
 		velocityComponent = GetNode<VelocityComponent>("VelocityComponent");
 		healthComponent = GetNode<HealthComponent>("HealthComponent");
-		Ability = new WindSlashRes();
+		Ability = new SparkRes();
 		animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		shootingPoint = GetNode<Marker2D>("Marker2D").GetNode<Marker2D>("Marker2D");
 	}

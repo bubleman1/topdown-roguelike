@@ -9,6 +9,8 @@ public partial class VelocityComponent : Node
 	public float SelfKnockbackCoeff {get; set;} = 5;
 	public Vector2 Velocity = Vector2.Zero;
 	public Vector2 Knockback {get; set; } = Vector2.Zero;
+	private float timer {get; set;} = 1;
+	private Vector2 RndVelocity {get; set;} = new Vector2(0, 0);
 	
 	public void ProcessVelocity()
 	{
@@ -34,5 +36,20 @@ public partial class VelocityComponent : Node
 	
 	public void KnockbackSelf(){
 		Knockback = -Velocity*SelfKnockbackCoeff;
+	}
+	
+	public void RandomMovement(float delta){
+		timer -= delta;
+		
+		if(timer <= 0)
+		{
+			var random =  new Random();
+			var x = random.Next(0 ,3);
+			var y = random.Next(0, 3);
+			RndVelocity = new Vector2(1 - x, 1 - y);
+			timer = 1;
+			
+		}
+		Velocity = RndVelocity;
 	}
 }
