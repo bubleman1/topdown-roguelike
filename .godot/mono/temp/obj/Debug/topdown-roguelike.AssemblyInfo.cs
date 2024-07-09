@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("topdown-roguelike")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abdc523afe5633775827db6fd18184b417f85d80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+310d43b138e001a555f933f06f2b9766695eb211")]
 [assembly: System.Reflection.AssemblyProductAttribute("topdown-roguelike")]
 [assembly: System.Reflection.AssemblyTitleAttribute("topdown-roguelike")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
