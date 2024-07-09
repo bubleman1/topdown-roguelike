@@ -19,7 +19,7 @@ public partial class VelocityComponent : Node
 	
 	public void ProcessKnockback()
 	{
-		Knockback  = Knockback.Lerp(Vector2.Zero, 0.1f);
+		Knockback = Knockback.Lerp(Vector2.Zero, 0.1f);
 	}
 	
 	public void GoTo(Vector2 pos)
@@ -28,7 +28,9 @@ public partial class VelocityComponent : Node
 		Velocity.X = pos.X - Owner2D.Position.X;
 		Velocity.Y = pos.Y - Owner2D.Position.Y;
 	}
-	
+	public void Stop(){
+		Velocity = Vector2.Zero;
+	}
 	public void GoStraight(Vector2 direction)
 	{
 		Velocity = direction;
