@@ -21,13 +21,12 @@ scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_r5oso")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-position = Vector2(15, -3)
-amount = 6
+position = Vector2(-1, -2)
 lifetime = 0.3
 speed_scale = 2.0
 texture = ExtResource("1_akokr")
 particle_flag_align_y = true
-spread = 10.0
+spread = 15.0
 gravity = Vector2(0, 0)
 initial_velocity_min = 300.0
 initial_velocity_max = 300.0
