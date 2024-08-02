@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "n//DaQ/HX/TaO9EXUJe+4OpiEUw7pGw4p3QA86a05g6yYMfrCSwgXBj7lVB0PlcxWestHnZKl8yhvQ64g1JhEg==",
+  "dgSpecHash": "sD6NkhxBHMhPGPg5OkEgLTHdjdmB5+ZZ9K3Py+bdr1ITWvm/c51AxbjfcERyKuUMb0FRdFjlMRiCpJw8xdBuSA==",
   "success": true,
-  "projectFilePath": "D:\\GodotProjects\\topdown-roguelike\\topdown-roguelike.csproj",
+  "projectFilePath": "C:\\Users\\hrist\\Documents\\GitHub\\topdown-roguelike\\topdown-roguelike.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\user\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
+    "C:\\Users\\hrist\\.nuget\\packages\\godot.sourcegenerators\\4.2.2\\godot.sourcegenerators.4.2.2.nupkg.sha512",
+    "C:\\Users\\hrist\\.nuget\\packages\\godotsharp\\4.2.2\\godotsharp.4.2.2.nupkg.sha512",
+    "C:\\Users\\hrist\\.nuget\\packages\\godotsharpeditor\\4.2.2\\godotsharpeditor.4.2.2.nupkg.sha512"
   ],
   "logs": []
 }

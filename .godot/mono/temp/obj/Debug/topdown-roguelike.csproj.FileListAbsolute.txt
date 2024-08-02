@@ -105,3 +105,21 @@ D:\Programing Projects\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-rogu
 D:\Programing Projects\topdown-roguelike\.godot\mono\temp\obj\Debug\ref\topdown-roguelike.dll
 D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.sourcelink.json
 D:\Godot Engine\Project\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-.3DD23993.Up2Date
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.deps.json
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.runtimeconfig.json
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.dll
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\bin\Debug\topdown-roguelike.pdb
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.AssemblyReference.cache
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfoInputs.cache
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.AssemblyInfo.cs
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.csproj.CoreCompileInputs.cache
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.sourcelink.json
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-.3DD23993.Up2Date
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.dll
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\refint\topdown-roguelike.dll
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.pdb
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\topdown-roguelike.genruntimeconfig.cache
+C:\Users\hrist\Documents\GitHub\topdown-roguelike\.godot\mono\temp\obj\Debug\ref\topdown-roguelike.dll

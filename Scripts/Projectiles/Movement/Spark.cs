@@ -9,6 +9,7 @@ public partial class Spark : Area2D
 	public DamageComponent damageComponent {get; set;} 
 	[Export]
 	public HitboxComponent hitboxComponent {get;set;}
+	//public Godot.CPUParticles2D endParticles {get;set;}
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -16,6 +17,7 @@ public partial class Spark : Area2D
 		velocityComponent.Speed = 1500;
 		damageComponent = GetNode<DamageComponent>("DamageComponent");
 		damageComponent.Damage = 20;
+		//endParticles = GetNode<CPUParticles2D>("CPUParticles2D2");
 		hitboxComponent = GetNode<HitboxComponent>("HitboxComponent");
 		BodyEntered += hitboxComponent._on_body_entered;
 		AreaEntered += hitboxComponent._on_area_entered;
@@ -34,6 +36,8 @@ public partial class Spark : Area2D
 	}
 	
 	public void DoParticles(){
+		//endParticles.Emmit=true;
+		//endParticles.Owner=this.Owner;
 		QueueFree();
 	}
 }

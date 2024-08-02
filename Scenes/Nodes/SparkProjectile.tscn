@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cf1to6i8cn6kn"]
+[gd_scene load_steps=8 format=3 uid="uid://cf1to6i8cn6kn"]
 
 [ext_resource type="Texture2D" uid="uid://bql8wpb3vfc0m" path="res://Assets/SpriteSheets/Projectiles/spark.png" id="1_akokr"]
 [ext_resource type="Script" path="res://Scripts/Projectiles/Movement/Spark.cs" id="1_pu2ww"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://diucpxaxcw0ok" path="res://Scenes/Components/HitboxComponent.tscn" id="5_hvblb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r5oso"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b5v12"]
+load_path = "res://.godot/imported/spark.png-61ba6d6337c7af26f64c6b602bc3661b.ctex"
 
 [node name="Spark" type="Area2D" groups=["projectile"]]
 script = ExtResource("1_pu2ww")
@@ -44,3 +47,21 @@ hue_variation_max = 1.0
 [node name="VelocityComponent" parent="." instance=ExtResource("4_0wd7k")]
 
 [node name="HitboxComponent" parent="." instance=ExtResource("5_hvblb")]
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
+position = Vector2(149, -103)
+emitting = false
+amount = 12
+lifetime = 0.7
+one_shot = true
+speed_scale = 2.0
+explosiveness = 0.95
+texture = SubResource("CompressedTexture2D_b5v12")
+emission_shape = 1
+emission_sphere_radius = 34.06
+particle_flag_align_y = true
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+radial_accel_min = 100.0
+radial_accel_max = 100.0
